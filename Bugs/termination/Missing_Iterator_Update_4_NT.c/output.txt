@@ -1,0 +1,507 @@
+Checking for termination
+Using default analysis
+Version 863304a1
+Calling Ultimate with: /usr/bin/java -Dosgi.configuration.area=/home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/data/config -Xmx15G -Xms4m -jar /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/plugins/org.eclipse.equinox.launcher_1.5.800.v20200727-1323.jar -data @noDefault -ultimatedata /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/data -tc /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/config/AutomizerTermination.xml -i /home/linasvidziunas/Projects/ExtendingAPR/termination/benchmark/loop/Missing_Iterator_Update_4_NT.c -s /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/config/svcomp-Termination-64bit-Automizer_Default.epf --cacsl2boogietranslator.entry.function main --witnessprinter.witness.directory /home/linasvidziunas/Projects/ExtendingAPR/non-terminating-loops/Missing_Iterator_Update_4_NT.c --witnessprinter.witness.filename witness.graphml --witnessprinter.write.witness.besides.input.file false --witnessprinter.graph.data.specification CHECK( init(main()), LTL(F end) )
+
+
+ --witnessprinter.graph.data.producer Automizer --witnessprinter.graph.data.architecture 64bit --witnessprinter.graph.data.programhash b4a8b54124e63ca10c190fdfd5e721735f8eb3a71700230f73f933b29f8c2fd4
+--- Real Ultimate output ---
+This is Ultimate 0.2.3-release-863304a
+[2023-01-23 10:09:55,282 INFO  L177        SettingsManager]: Resetting all preferences to default values...
+[2023-01-23 10:09:55,299 INFO  L181        SettingsManager]: Resetting UltimateCore preferences to default values
+[2023-01-23 10:09:55,439 INFO  L184        SettingsManager]: Ultimate Commandline Interface provides no preferences, ignoring...
+[2023-01-23 10:09:55,440 INFO  L181        SettingsManager]: Resetting Boogie Preprocessor preferences to default values
+[2023-01-23 10:09:55,448 INFO  L181        SettingsManager]: Resetting Boogie Procedure Inliner preferences to default values
+[2023-01-23 10:09:55,452 INFO  L181        SettingsManager]: Resetting Abstract Interpretation preferences to default values
+[2023-01-23 10:09:55,459 INFO  L181        SettingsManager]: Resetting LassoRanker preferences to default values
+[2023-01-23 10:09:55,469 INFO  L181        SettingsManager]: Resetting Reaching Definitions preferences to default values
+[2023-01-23 10:09:55,472 INFO  L181        SettingsManager]: Resetting SyntaxChecker preferences to default values
+[2023-01-23 10:09:55,475 INFO  L181        SettingsManager]: Resetting Sifa preferences to default values
+[2023-01-23 10:09:55,477 INFO  L184        SettingsManager]: Büchi Program Product provides no preferences, ignoring...
+[2023-01-23 10:09:55,479 INFO  L181        SettingsManager]: Resetting LTL2Aut preferences to default values
+[2023-01-23 10:09:55,484 INFO  L181        SettingsManager]: Resetting PEA to Boogie preferences to default values
+[2023-01-23 10:09:55,487 INFO  L181        SettingsManager]: Resetting BlockEncodingV2 preferences to default values
+[2023-01-23 10:09:55,489 INFO  L181        SettingsManager]: Resetting ChcToBoogie preferences to default values
+[2023-01-23 10:09:55,491 INFO  L181        SettingsManager]: Resetting AutomataScriptInterpreter preferences to default values
+[2023-01-23 10:09:55,492 INFO  L181        SettingsManager]: Resetting BuchiAutomizer preferences to default values
+[2023-01-23 10:09:55,495 INFO  L181        SettingsManager]: Resetting CACSL2BoogieTranslator preferences to default values
+[2023-01-23 10:09:55,498 INFO  L181        SettingsManager]: Resetting CodeCheck preferences to default values
+[2023-01-23 10:09:55,500 INFO  L181        SettingsManager]: Resetting InvariantSynthesis preferences to default values
+[2023-01-23 10:09:55,516 INFO  L181        SettingsManager]: Resetting RCFGBuilder preferences to default values
+[2023-01-23 10:09:55,518 INFO  L181        SettingsManager]: Resetting Referee preferences to default values
+[2023-01-23 10:09:55,520 INFO  L181        SettingsManager]: Resetting TraceAbstraction preferences to default values
+[2023-01-23 10:09:55,581 INFO  L184        SettingsManager]: TraceAbstractionConcurrent provides no preferences, ignoring...
+[2023-01-23 10:09:55,582 INFO  L184        SettingsManager]: TraceAbstractionWithAFAs provides no preferences, ignoring...
+[2023-01-23 10:09:55,583 INFO  L181        SettingsManager]: Resetting TreeAutomizer preferences to default values
+[2023-01-23 10:09:55,585 INFO  L181        SettingsManager]: Resetting IcfgToChc preferences to default values
+[2023-01-23 10:09:55,586 INFO  L181        SettingsManager]: Resetting IcfgTransformer preferences to default values
+[2023-01-23 10:09:55,587 INFO  L184        SettingsManager]: ReqToTest provides no preferences, ignoring...
+[2023-01-23 10:09:55,588 INFO  L181        SettingsManager]: Resetting Boogie Printer preferences to default values
+[2023-01-23 10:09:55,589 INFO  L181        SettingsManager]: Resetting ChcSmtPrinter preferences to default values
+[2023-01-23 10:09:55,591 INFO  L181        SettingsManager]: Resetting ReqPrinter preferences to default values
+[2023-01-23 10:09:55,592 INFO  L181        SettingsManager]: Resetting Witness Printer preferences to default values
+[2023-01-23 10:09:55,594 INFO  L184        SettingsManager]: Boogie PL CUP Parser provides no preferences, ignoring...
+[2023-01-23 10:09:55,594 INFO  L181        SettingsManager]: Resetting CDTParser preferences to default values
+[2023-01-23 10:09:55,596 INFO  L184        SettingsManager]: AutomataScriptParser provides no preferences, ignoring...
+[2023-01-23 10:09:55,596 INFO  L184        SettingsManager]: ReqParser provides no preferences, ignoring...
+[2023-01-23 10:09:55,597 INFO  L181        SettingsManager]: Resetting SmtParser preferences to default values
+[2023-01-23 10:09:55,599 INFO  L181        SettingsManager]: Resetting Witness Parser preferences to default values
+[2023-01-23 10:09:55,600 INFO  L188        SettingsManager]: Finished resetting all preferences to default values...
+[2023-01-23 10:09:55,607 INFO  L101        SettingsManager]: Beginning loading settings from /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/config/svcomp-Termination-64bit-Automizer_Default.epf
+[2023-01-23 10:09:55,845 INFO  L113        SettingsManager]: Loading preferences was successful
+[2023-01-23 10:09:55,862 INFO  L115        SettingsManager]: Preferences different from defaults after loading the file:
+[2023-01-23 10:09:55,872 INFO  L136        SettingsManager]: Preferences of UltimateCore differ from their defaults:
+[2023-01-23 10:09:55,873 INFO  L138        SettingsManager]:  * Log level for class=de.uni_freiburg.informatik.ultimate.lib.smtlibutils.quantifier.QuantifierPusher=ERROR;
+[2023-01-23 10:09:55,877 INFO  L136        SettingsManager]: Preferences of BlockEncodingV2 differ from their defaults:
+[2023-01-23 10:09:55,877 INFO  L138        SettingsManager]:  * Create parallel compositions if possible=false
+[2023-01-23 10:09:55,877 INFO  L138        SettingsManager]:  * Use SBE=true
+[2023-01-23 10:09:55,882 INFO  L136        SettingsManager]: Preferences of BuchiAutomizer differ from their defaults:
+[2023-01-23 10:09:55,886 INFO  L138        SettingsManager]:  * NCSB implementation=INTSET_LAZY3
+[2023-01-23 10:09:55,886 INFO  L138        SettingsManager]:  * Use old map elimination=false
+[2023-01-23 10:09:55,890 INFO  L138        SettingsManager]:  * Use external solver (rank synthesis)=false
+[2023-01-23 10:09:55,891 INFO  L138        SettingsManager]:  * Use only trivial implications for array writes=true
+[2023-01-23 10:09:55,892 INFO  L138        SettingsManager]:  * Rank analysis=LINEAR_WITH_GUESSES
+[2023-01-23 10:09:55,892 INFO  L136        SettingsManager]: Preferences of CACSL2BoogieTranslator differ from their defaults:
+[2023-01-23 10:09:55,893 INFO  L138        SettingsManager]:  * Check unreachability of error function in SV-COMP mode=false
+[2023-01-23 10:09:55,893 INFO  L138        SettingsManager]:  * Overapproximate operations on floating types=true
+[2023-01-23 10:09:55,893 INFO  L138        SettingsManager]:  * Check division by zero=IGNORE
+[2023-01-23 10:09:55,900 INFO  L138        SettingsManager]:  * Pointer to allocated memory at dereference=ASSUME
+[2023-01-23 10:09:55,900 INFO  L138        SettingsManager]:  * If two pointers are subtracted or compared they have the same base address=ASSUME
+[2023-01-23 10:09:55,902 INFO  L138        SettingsManager]:  * Check array bounds for arrays that are off heap=ASSUME
+[2023-01-23 10:09:55,917 INFO  L138        SettingsManager]:  * Check if freed pointer was valid=false
+[2023-01-23 10:09:55,921 INFO  L138        SettingsManager]:  * Assume nondeterminstic values are in range=false
+[2023-01-23 10:09:55,921 INFO  L138        SettingsManager]:  * Use constant arrays=true
+[2023-01-23 10:09:55,921 INFO  L138        SettingsManager]:  * Pointer base address is valid at dereference=ASSUME
+[2023-01-23 10:09:55,922 INFO  L136        SettingsManager]: Preferences of RCFGBuilder differ from their defaults:
+[2023-01-23 10:09:55,922 INFO  L138        SettingsManager]:  * Size of a code block=SequenceOfStatements
+[2023-01-23 10:09:55,923 INFO  L136        SettingsManager]: Preferences of TraceAbstraction differ from their defaults:
+[2023-01-23 10:09:55,923 INFO  L138        SettingsManager]:  * Trace refinement strategy=CAMEL
+[2023-01-23 10:09:55,940 INFO  L136        SettingsManager]: Preferences of IcfgTransformer differ from their defaults:
+[2023-01-23 10:09:55,941 INFO  L138        SettingsManager]:  * TransformationType=MODULO_NEIGHBOR
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector$1 (file:/home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/plugins/com.sun.xml.bind_2.2.0.v201505121915.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator: Entry function -> main
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Witness directory -> /home/linasvidziunas/Projects/ExtendingAPR/non-terminating-loops/Missing_Iterator_Update_4_NT.c
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Witness filename -> witness.graphml
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Write witness besides input file -> false
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Graph data specification -> CHECK( init(main()), LTL(F end) )
+
+
+
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Graph data producer -> Automizer
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Graph data architecture -> 64bit
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Graph data programhash -> b4a8b54124e63ca10c190fdfd5e721735f8eb3a71700230f73f933b29f8c2fd4
+[2023-01-23 10:09:57,778 INFO  L75    nceAwareModelManager]: Repository-Root is: /tmp
+[2023-01-23 10:09:57,883 INFO  L261   ainManager$Toolchain]: [Toolchain 1]: Applicable parser(s) successfully (re)initialized
+[2023-01-23 10:09:57,889 INFO  L217   ainManager$Toolchain]: [Toolchain 1]: Toolchain selected.
+[2023-01-23 10:09:57,891 INFO  L271        PluginConnector]: Initializing CDTParser...
+[2023-01-23 10:09:57,912 INFO  L275        PluginConnector]: CDTParser initialized
+[2023-01-23 10:09:57,928 INFO  L432   ainManager$Toolchain]: [Toolchain 1]: Parsing single file: /home/linasvidziunas/Projects/ExtendingAPR/termination/benchmark/loop/Missing_Iterator_Update_4_NT.c
+[2023-01-23 10:10:03,561 INFO  L500              CDTParser]: Created temporary CDT project at NULL
+[2023-01-23 10:10:04,556 INFO  L351              CDTParser]: Found 1 translation units.
+[2023-01-23 10:10:04,560 INFO  L172              CDTParser]: Scanning /home/linasvidziunas/Projects/ExtendingAPR/termination/benchmark/loop/Missing_Iterator_Update_4_NT.c
+[2023-01-23 10:10:04,593 INFO  L394              CDTParser]: About to delete temporary CDT project at /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/data/9d147327e/46a878bad48649dea4805c64727e86b6/FLAG21c89f49a
+[2023-01-23 10:10:04,624 INFO  L402              CDTParser]: Successfully deleted /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/data/9d147327e/46a878bad48649dea4805c64727e86b6
+[2023-01-23 10:10:04,642 INFO  L299   ainManager$Toolchain]: ####################### [Toolchain 1] #######################
+[2023-01-23 10:10:04,645 INFO  L131        ToolchainWalker]: Walking toolchain with 6 elements.
+[2023-01-23 10:10:04,647 INFO  L113        PluginConnector]: ------------------------CACSL2BoogieTranslator----------------------------
+[2023-01-23 10:10:04,659 INFO  L271        PluginConnector]: Initializing CACSL2BoogieTranslator...
+[2023-01-23 10:10:04,664 INFO  L275        PluginConnector]: CACSL2BoogieTranslator initialized
+[2023-01-23 10:10:04,666 INFO  L185        PluginConnector]: Executing the observer ACSLObjectContainerObserver from plugin CACSL2BoogieTranslator for "CDTParser AST 23.01 10:10:04" (1/1) ...
+[2023-01-23 10:10:04,668 INFO  L205        PluginConnector]: Invalid model from CACSL2BoogieTranslator for observer de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator.ACSLObjectContainerObserver@77a7eee4 and model type de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:10:04, skipping insertion in model container
+[2023-01-23 10:10:04,668 INFO  L185        PluginConnector]: Executing the observer CACSL2BoogieTranslatorObserver from plugin CACSL2BoogieTranslator for "CDTParser AST 23.01 10:10:04" (1/1) ...
+[2023-01-23 10:10:04,689 INFO  L145         MainTranslator]: Starting translation in SV-COMP mode 
+[2023-01-23 10:10:04,740 INFO  L178         MainTranslator]: Built tables and reachable declarations
+[2023-01-23 10:10:05,704 INFO  L210          PostProcessor]: Analyzing one entry point: main
+[2023-01-23 10:10:05,725 INFO  L203         MainTranslator]: Completed pre-run
+[2023-01-23 10:10:05,757 INFO  L210          PostProcessor]: Analyzing one entry point: main
+[2023-01-23 10:10:05,777 INFO  L208         MainTranslator]: Completed translation
+[2023-01-23 10:10:05,778 INFO  L202        PluginConnector]: Adding new model de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:10:05 WrapperNode
+[2023-01-23 10:10:05,779 INFO  L132        PluginConnector]: ------------------------ END CACSL2BoogieTranslator----------------------------
+[2023-01-23 10:10:05,781 INFO  L113        PluginConnector]: ------------------------Boogie Procedure Inliner----------------------------
+[2023-01-23 10:10:05,781 INFO  L271        PluginConnector]: Initializing Boogie Procedure Inliner...
+[2023-01-23 10:10:05,781 INFO  L275        PluginConnector]: Boogie Procedure Inliner initialized
+[2023-01-23 10:10:05,793 INFO  L185        PluginConnector]: Executing the observer TypeChecker from plugin Boogie Procedure Inliner for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:10:05" (1/1) ...
+[2023-01-23 10:10:05,805 INFO  L185        PluginConnector]: Executing the observer Inliner from plugin Boogie Procedure Inliner for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:10:05" (1/1) ...
+[2023-01-23 10:10:05,837 INFO  L138                Inliner]: procedures = 3, calls = 2, calls flagged for inlining = 2, calls inlined = 2, statements flattened = 36
+[2023-01-23 10:10:05,838 INFO  L132        PluginConnector]: ------------------------ END Boogie Procedure Inliner----------------------------
+[2023-01-23 10:10:05,843 INFO  L113        PluginConnector]: ------------------------Boogie Preprocessor----------------------------
+[2023-01-23 10:10:05,843 INFO  L271        PluginConnector]: Initializing Boogie Preprocessor...
+[2023-01-23 10:10:05,844 INFO  L275        PluginConnector]: Boogie Preprocessor initialized
+[2023-01-23 10:10:05,858 INFO  L185        PluginConnector]: Executing the observer EnsureBoogieModelObserver from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:10:05" (1/1) ...
+[2023-01-23 10:10:05,859 INFO  L185        PluginConnector]: Executing the observer TypeChecker from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:10:05" (1/1) ...
+[2023-01-23 10:10:05,860 INFO  L185        PluginConnector]: Executing the observer ConstExpander from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:10:05" (1/1) ...
+[2023-01-23 10:10:05,861 INFO  L185        PluginConnector]: Executing the observer StructExpander from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:10:05" (1/1) ...
+[2023-01-23 10:10:05,865 INFO  L185        PluginConnector]: Executing the observer UnstructureCode from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:10:05" (1/1) ...
+[2023-01-23 10:10:05,884 INFO  L185        PluginConnector]: Executing the observer FunctionInliner from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:10:05" (1/1) ...
+[2023-01-23 10:10:05,886 INFO  L185        PluginConnector]: Executing the observer LTLStepAnnotator from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:10:05" (1/1) ...
+[2023-01-23 10:10:05,887 INFO  L185        PluginConnector]: Executing the observer BoogieSymbolTableConstructor from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:10:05" (1/1) ...
+[2023-01-23 10:10:05,916 INFO  L132        PluginConnector]: ------------------------ END Boogie Preprocessor----------------------------
+[2023-01-23 10:10:05,919 INFO  L113        PluginConnector]: ------------------------RCFGBuilder----------------------------
+[2023-01-23 10:10:05,921 INFO  L271        PluginConnector]: Initializing RCFGBuilder...
+[2023-01-23 10:10:05,922 INFO  L275        PluginConnector]: RCFGBuilder initialized
+[2023-01-23 10:10:05,926 INFO  L185        PluginConnector]: Executing the observer RCFGBuilderObserver from plugin RCFGBuilder for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:10:05" (1/1) ...
+[2023-01-23 10:10:05,965 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:06,003 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:06,088 INFO  L229       MonitoredProcess]: Starting monitored process 1 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:06,189 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (1)] Waiting until timeout for monitored process
+[2023-01-23 10:10:06,415 INFO  L130     BoogieDeclarations]: Found specification of procedure ULTIMATE.start
+[2023-01-23 10:10:06,422 INFO  L138     BoogieDeclarations]: Found implementation of procedure ULTIMATE.start
+[2023-01-23 10:10:06,786 INFO  L235             CfgBuilder]: Building ICFG
+[2023-01-23 10:10:06,802 INFO  L261             CfgBuilder]: Building CFG for each procedure with an implementation
+[2023-01-23 10:10:07,224 INFO  L276             CfgBuilder]: Performing block encoding
+[2023-01-23 10:10:07,256 INFO  L295             CfgBuilder]: Using the 1 location(s) as analysis (start of procedure ULTIMATE.start)
+[2023-01-23 10:10:07,260 INFO  L300             CfgBuilder]: Removed 2 assume(true) statements.
+[2023-01-23 10:10:07,274 INFO  L202        PluginConnector]: Adding new model de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder CFG 23.01 10:10:07 BoogieIcfgContainer
+[2023-01-23 10:10:07,281 INFO  L132        PluginConnector]: ------------------------ END RCFGBuilder----------------------------
+[2023-01-23 10:10:07,283 INFO  L113        PluginConnector]: ------------------------BuchiAutomizer----------------------------
+[2023-01-23 10:10:07,284 INFO  L271        PluginConnector]: Initializing BuchiAutomizer...
+[2023-01-23 10:10:07,291 INFO  L275        PluginConnector]: BuchiAutomizer initialized
+[2023-01-23 10:10:07,307 INFO  L99          BuchiAutomizer]: Safety of program was proven or not checked, starting termination analysis
+[2023-01-23 10:10:07,318 INFO  L185        PluginConnector]: Executing the observer BuchiAutomizerObserver from plugin BuchiAutomizer for "CDTParser AST 23.01 10:10:04" (1/3) ...
+[2023-01-23 10:10:07,320 INFO  L205        PluginConnector]: Invalid model from BuchiAutomizer for observer de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer.BuchiAutomizerObserver@d4bab4a and model type de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer AST 23.01 10:10:07, skipping insertion in model container
+[2023-01-23 10:10:07,321 INFO  L99          BuchiAutomizer]: Safety of program was proven or not checked, starting termination analysis
+[2023-01-23 10:10:07,321 INFO  L185        PluginConnector]: Executing the observer BuchiAutomizerObserver from plugin BuchiAutomizer for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:10:05" (2/3) ...
+[2023-01-23 10:10:07,324 INFO  L205        PluginConnector]: Invalid model from BuchiAutomizer for observer de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer.BuchiAutomizerObserver@d4bab4a and model type de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer AST 23.01 10:10:07, skipping insertion in model container
+[2023-01-23 10:10:07,327 INFO  L99          BuchiAutomizer]: Safety of program was proven or not checked, starting termination analysis
+[2023-01-23 10:10:07,332 INFO  L185        PluginConnector]: Executing the observer BuchiAutomizerObserver from plugin BuchiAutomizer for "de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder CFG 23.01 10:10:07" (3/3) ...
+[2023-01-23 10:10:07,335 INFO  L332   chiAutomizerObserver]: Analyzing ICFG Missing_Iterator_Update_4_NT.c
+[2023-01-23 10:10:07,621 INFO  L303   stractBuchiCegarLoop]: Interprodecural is true
+[2023-01-23 10:10:07,622 INFO  L304   stractBuchiCegarLoop]: Hoare is false
+[2023-01-23 10:10:07,622 INFO  L305   stractBuchiCegarLoop]: Compute interpolants for ForwardPredicates
+[2023-01-23 10:10:07,622 INFO  L306   stractBuchiCegarLoop]: Backedges is STRAIGHT_LINE
+[2023-01-23 10:10:07,622 INFO  L307   stractBuchiCegarLoop]: Determinization is PREDICATE_ABSTRACTION
+[2023-01-23 10:10:07,623 INFO  L308   stractBuchiCegarLoop]: Difference is false
+[2023-01-23 10:10:07,623 INFO  L309   stractBuchiCegarLoop]: Minimize is MINIMIZE_SEVPA
+[2023-01-23 10:10:07,623 INFO  L313   stractBuchiCegarLoop]: ======== Iteration 0 == of CEGAR loop == BuchiAutomatonCegarLoop ========
+[2023-01-23 10:10:07,650 INFO  L72            BuchiIsEmpty]: Start buchiIsEmpty. Operand  has 12 states, 11 states have (on average 1.4545454545454546) internal successors, (16), 11 states have internal predecessors, (16), 0 states have call successors, (0), 0 states have call predecessors, (0), 0 states have return successors, (0), 0 states have call predecessors, (0), 0 states have call successors, (0)
+[2023-01-23 10:10:07,695 INFO  L131   ngComponentsAnalysis]: Automaton has 1 accepting balls. 5
+[2023-01-23 10:10:07,701 INFO  L87            BuchiIsEmpty]: Finished buchiIsEmpty Result is false
+[2023-01-23 10:10:07,701 INFO  L119           BuchiIsEmpty]: Starting construction of run
+[2023-01-23 10:10:07,711 INFO  L148   hiAutomatonCegarLoop]: Counterexample stem histogram [1, 1, 1]
+[2023-01-23 10:10:07,715 INFO  L149   hiAutomatonCegarLoop]: Counterexample loop histogram [1, 1, 1, 1]
+[2023-01-23 10:10:07,715 INFO  L335   stractBuchiCegarLoop]: ======== Iteration 1 ============
+[2023-01-23 10:10:07,716 INFO  L72            BuchiIsEmpty]: Start buchiIsEmpty. Operand  has 12 states, 11 states have (on average 1.4545454545454546) internal successors, (16), 11 states have internal predecessors, (16), 0 states have call successors, (0), 0 states have call predecessors, (0), 0 states have return successors, (0), 0 states have call predecessors, (0), 0 states have call successors, (0)
+[2023-01-23 10:10:07,722 INFO  L131   ngComponentsAnalysis]: Automaton has 1 accepting balls. 5
+[2023-01-23 10:10:07,723 INFO  L87            BuchiIsEmpty]: Finished buchiIsEmpty Result is false
+[2023-01-23 10:10:07,723 INFO  L119           BuchiIsEmpty]: Starting construction of run
+[2023-01-23 10:10:07,724 INFO  L148   hiAutomatonCegarLoop]: Counterexample stem histogram [1, 1, 1]
+[2023-01-23 10:10:07,725 INFO  L149   hiAutomatonCegarLoop]: Counterexample loop histogram [1, 1, 1, 1]
+[2023-01-23 10:10:07,782 INFO  L748   eck$LassoCheckResult]: Stem: 6#$Ultimate##0true assume { :begin_inline_ULTIMATE.init } true; 8#L-1true assume { :end_inline_ULTIMATE.init } true;assume { :begin_inline_main } true;havoc main_#res#1;havoc main_#t~nondet0#1, main_#t~nondet1#1, main_#t~nondet2#1, main_#t~nondet3#1, main_#t~nondet4#1, main_#t~post6#1, main_#t~post7#1, main_#t~post5#1, main_~x~0#1, main_~mat_colSize~0#1, main_~y~0#1, main_~z~0#1, main_~mat_rowSize~0#1;main_~x~0#1 := main_#t~nondet0#1;havoc main_#t~nondet0#1;main_~mat_colSize~0#1 := main_#t~nondet1#1;havoc main_#t~nondet1#1;main_~y~0#1 := main_#t~nondet2#1;havoc main_#t~nondet2#1;main_~z~0#1 := main_#t~nondet3#1;havoc main_#t~nondet3#1;main_~mat_rowSize~0#1 := main_#t~nondet4#1;havoc main_#t~nondet4#1; 7#L15true assume !(((main_~mat_colSize~0#1 < 0 || main_~mat_rowSize~0#1 < 0) || main_~mat_colSize~0#1 > 65534) || main_~mat_rowSize~0#1 > 65534);main_~x~0#1 := 0; 9#L17-3true 
+[2023-01-23 10:10:07,786 INFO  L750   eck$LassoCheckResult]: Loop: 9#L17-3true assume !!(main_~x~0#1 < main_~mat_colSize~0#1);main_~y~0#1 := 0; 11#L19-3true assume !(main_~y~0#1 < main_~mat_rowSize~0#1); 13#L19-4true main_#t~post7#1 := main_~z~0#1;main_~z~0#1 := 1 + main_#t~post7#1;havoc main_#t~post7#1; 4#L17-2true main_#t~post5#1 := main_~z~0#1;main_~z~0#1 := 1 + main_#t~post5#1;havoc main_#t~post5#1; 9#L17-3true 
+[2023-01-23 10:10:07,839 INFO  L144       PredicateUnifier]: Initialized classic predicate unifier
+[2023-01-23 10:10:07,876 INFO  L85        PathProgramCache]: Analyzing trace with hash 29860, now seen corresponding path program 1 times
+[2023-01-23 10:10:07,920 INFO  L118   FreeRefinementEngine]: Executing refinement strategy CAMEL
+[2023-01-23 10:10:07,921 INFO  L333   FreeRefinementEngine]: Using trace check IpTcStrategyModuleSmtInterpolCraig [1873203638]
+[2023-01-23 10:10:07,922 INFO  L95    rtionOrderModulation]: Keeping assertion order NOT_INCREMENTALLY
+[2023-01-23 10:10:07,954 INFO  L127          SolverBuilder]: Constructing new instance of SMTInterpol with explicit timeout -1 ms and remaining time -1 ms
+[2023-01-23 10:10:08,615 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:10:08,624 INFO  L356             TraceCheck]: Trace is feasible, we will do another trace check, this time with branch encoders.
+[2023-01-23 10:10:08,669 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:10:08,748 INFO  L130   FreeRefinementEngine]: Strategy CAMEL found a feasible trace
+[2023-01-23 10:10:08,789 INFO  L144       PredicateUnifier]: Initialized classic predicate unifier
+[2023-01-23 10:10:08,789 INFO  L85        PathProgramCache]: Analyzing trace with hash 1391497, now seen corresponding path program 1 times
+[2023-01-23 10:10:08,790 INFO  L118   FreeRefinementEngine]: Executing refinement strategy CAMEL
+[2023-01-23 10:10:08,791 INFO  L333   FreeRefinementEngine]: Using trace check IpTcStrategyModuleSmtInterpolCraig [1379363749]
+[2023-01-23 10:10:08,792 INFO  L95    rtionOrderModulation]: Keeping assertion order NOT_INCREMENTALLY
+[2023-01-23 10:10:08,793 INFO  L127          SolverBuilder]: Constructing new instance of SMTInterpol with explicit timeout -1 ms and remaining time -1 ms
+[2023-01-23 10:10:08,863 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:10:08,864 INFO  L356             TraceCheck]: Trace is feasible, we will do another trace check, this time with branch encoders.
+[2023-01-23 10:10:08,873 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:10:08,879 INFO  L130   FreeRefinementEngine]: Strategy CAMEL found a feasible trace
+[2023-01-23 10:10:08,882 INFO  L144       PredicateUnifier]: Initialized classic predicate unifier
+[2023-01-23 10:10:08,882 INFO  L85        PathProgramCache]: Analyzing trace with hash 1807001260, now seen corresponding path program 1 times
+[2023-01-23 10:10:08,883 INFO  L118   FreeRefinementEngine]: Executing refinement strategy CAMEL
+[2023-01-23 10:10:08,884 INFO  L333   FreeRefinementEngine]: Using trace check IpTcStrategyModuleSmtInterpolCraig [214005371]
+[2023-01-23 10:10:08,884 INFO  L95    rtionOrderModulation]: Keeping assertion order NOT_INCREMENTALLY
+[2023-01-23 10:10:08,885 INFO  L127          SolverBuilder]: Constructing new instance of SMTInterpol with explicit timeout -1 ms and remaining time -1 ms
+[2023-01-23 10:10:08,995 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:10:08,995 INFO  L356             TraceCheck]: Trace is feasible, we will do another trace check, this time with branch encoders.
+[2023-01-23 10:10:09,028 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:10:09,031 INFO  L130   FreeRefinementEngine]: Strategy CAMEL found a feasible trace
+[2023-01-23 10:10:09,468 INFO  L210          LassoAnalysis]: Preferences:
+[2023-01-23 10:10:09,469 INFO  L126   ssoRankerPreferences]: Compute integeral hull: false
+[2023-01-23 10:10:09,469 INFO  L127   ssoRankerPreferences]: Enable LassoPartitioneer: true
+[2023-01-23 10:10:09,470 INFO  L128   ssoRankerPreferences]: Term annotations enabled: false
+[2023-01-23 10:10:09,470 INFO  L129   ssoRankerPreferences]: Use exernal solver: true
+[2023-01-23 10:10:09,470 INFO  L130   ssoRankerPreferences]: SMT solver command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:09,471 INFO  L131   ssoRankerPreferences]: Dump SMT script to file: false
+[2023-01-23 10:10:09,471 INFO  L132   ssoRankerPreferences]: Path of dumped script: 
+[2023-01-23 10:10:09,475 INFO  L133   ssoRankerPreferences]: Filename of dumped script: Missing_Iterator_Update_4_NT.c_Iteration1_Loop
+[2023-01-23 10:10:09,476 INFO  L134   ssoRankerPreferences]: MapElimAlgo: Frank
+[2023-01-23 10:10:09,477 INFO  L276          LassoAnalysis]: Starting lasso preprocessing...
+[2023-01-23 10:10:09,589 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:09,634 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:09,678 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:09,699 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:09,722 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:09,915 INFO  L294          LassoAnalysis]: Preprocessing complete.
+[2023-01-23 10:10:09,919 INFO  L404          LassoAnalysis]: Checking for nontermination...
+[2023-01-23 10:10:09,927 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:09,929 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:09,988 INFO  L229       MonitoredProcess]: Starting monitored process 2 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:10,054 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (2)] Waiting until timeout for monitored process
+[2023-01-23 10:10:10,056 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:10,056 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:10,201 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (2)] Forceful destruction successful, exit code 0
+[2023-01-23 10:10:10,203 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:10,204 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:10,235 INFO  L229       MonitoredProcess]: Starting monitored process 3 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:10,271 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (3)] Waiting until timeout for monitored process
+[2023-01-23 10:10:10,275 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 3 Nilpotent components: true
+[2023-01-23 10:10:10,275 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:10,619 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:10,619 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_~z~0#1=0} Honda state: {ULTIMATE.start_main_~z~0#1=0} Generalized eigenvectors: [{ULTIMATE.start_main_~z~0#1=-1}, {ULTIMATE.start_main_~z~0#1=0}, {ULTIMATE.start_main_~z~0#1=3}] Lambdas: [1, 4, 1] Nus: [0, 0]
+[2023-01-23 10:10:10,645 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (3)] Ended with exit code 0
+[2023-01-23 10:10:10,647 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:10,648 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:10,660 INFO  L229       MonitoredProcess]: Starting monitored process 4 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:10,701 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (4)] Waiting until timeout for monitored process
+[2023-01-23 10:10:10,703 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:10,703 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:10,741 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:10,742 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_~y~0#1=0, ULTIMATE.start_main_~mat_rowSize~0#1=0} Honda state: {ULTIMATE.start_main_~y~0#1=0, ULTIMATE.start_main_~mat_rowSize~0#1=0} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:10,749 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (4)] Ended with exit code 0
+[2023-01-23 10:10:10,751 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:10,751 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:10,821 INFO  L229       MonitoredProcess]: Starting monitored process 5 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:10,900 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (5)] Waiting until timeout for monitored process
+[2023-01-23 10:10:10,902 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:10,902 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:10,981 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:10,981 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_#t~post7#1=0} Honda state: {ULTIMATE.start_main_#t~post7#1=0} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:10,995 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (5)] Ended with exit code 0
+[2023-01-23 10:10:10,996 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:10,996 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:11,004 INFO  L229       MonitoredProcess]: Starting monitored process 6 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:11,083 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:11,083 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:11,103 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (6)] Waiting until timeout for monitored process
+[2023-01-23 10:10:11,166 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:11,166 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_~x~0#1=0, ULTIMATE.start_main_~mat_colSize~0#1=1} Honda state: {ULTIMATE.start_main_~x~0#1=0, ULTIMATE.start_main_~mat_colSize~0#1=1} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:11,225 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (6)] Ended with exit code 0
+[2023-01-23 10:10:11,225 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:11,226 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:11,233 INFO  L229       MonitoredProcess]: Starting monitored process 7 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:11,302 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:11,302 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:11,316 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (7)] Waiting until timeout for monitored process
+[2023-01-23 10:10:11,359 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:11,360 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_#t~post5#1=0} Honda state: {ULTIMATE.start_main_#t~post5#1=0} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:11,367 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (7)] Ended with exit code 0
+[2023-01-23 10:10:11,598 INFO  L210          LassoAnalysis]: Preferences:
+[2023-01-23 10:10:11,598 INFO  L126   ssoRankerPreferences]: Compute integeral hull: false
+[2023-01-23 10:10:11,599 INFO  L127   ssoRankerPreferences]: Enable LassoPartitioneer: true
+[2023-01-23 10:10:11,599 INFO  L128   ssoRankerPreferences]: Term annotations enabled: false
+[2023-01-23 10:10:11,599 INFO  L129   ssoRankerPreferences]: Use exernal solver: true
+[2023-01-23 10:10:11,599 INFO  L130   ssoRankerPreferences]: SMT solver command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:11,600 INFO  L131   ssoRankerPreferences]: Dump SMT script to file: false
+[2023-01-23 10:10:11,600 INFO  L132   ssoRankerPreferences]: Path of dumped script: 
+[2023-01-23 10:10:11,600 INFO  L133   ssoRankerPreferences]: Filename of dumped script: Missing_Iterator_Update_4_NT.c_Iteration1_Lasso
+[2023-01-23 10:10:11,600 INFO  L134   ssoRankerPreferences]: MapElimAlgo: Frank
+[2023-01-23 10:10:11,600 INFO  L276          LassoAnalysis]: Starting lasso preprocessing...
+[2023-01-23 10:10:11,604 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:11,614 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:11,618 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:11,624 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:11,630 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:11,648 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:11,652 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:11,657 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:11,686 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:11,710 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:11,736 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:11,755 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:10:12,610 INFO  L294          LassoAnalysis]: Preprocessing complete.
+[2023-01-23 10:10:12,611 INFO  L404          LassoAnalysis]: Checking for nontermination...
+[2023-01-23 10:10:12,626 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:12,627 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:12,665 INFO  L229       MonitoredProcess]: Starting monitored process 8 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:12,713 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (8)] Waiting until timeout for monitored process
+[2023-01-23 10:10:12,713 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:12,713 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:12,889 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (8)] Ended with exit code 0
+[2023-01-23 10:10:12,891 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:12,891 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:12,914 INFO  L229       MonitoredProcess]: Starting monitored process 9 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:12,991 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (9)] Waiting until timeout for monitored process
+[2023-01-23 10:10:13,017 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 3 Nilpotent components: true
+[2023-01-23 10:10:13,017 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:13,159 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:13,160 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_~z~0#1=0} Honda state: {ULTIMATE.start_main_~z~0#1=0} Generalized eigenvectors: [{ULTIMATE.start_main_~z~0#1=-1}, {ULTIMATE.start_main_~z~0#1=0}, {ULTIMATE.start_main_~z~0#1=3}] Lambdas: [1, 4, 1] Nus: [0, 0]
+[2023-01-23 10:10:13,171 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (9)] Ended with exit code 0
+[2023-01-23 10:10:13,172 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:13,172 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:13,185 INFO  L229       MonitoredProcess]: Starting monitored process 10 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:13,337 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:13,337 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:13,358 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (10)] Waiting until timeout for monitored process
+[2023-01-23 10:10:13,424 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:13,424 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_#t~nondet1#1=0} Honda state: {ULTIMATE.start_main_#t~nondet1#1=0} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:13,431 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (10)] Ended with exit code 0
+[2023-01-23 10:10:13,432 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:13,433 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:13,572 INFO  L229       MonitoredProcess]: Starting monitored process 11 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:13,676 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:13,676 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:13,738 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (11)] Waiting until timeout for monitored process
+[2023-01-23 10:10:13,885 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:13,885 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_#t~nondet4#1=0} Honda state: {ULTIMATE.start_main_#t~nondet4#1=0} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:13,896 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (11)] Ended with exit code 0
+[2023-01-23 10:10:13,903 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:13,903 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:13,948 INFO  L229       MonitoredProcess]: Starting monitored process 12 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:13,954 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (12)] Waiting until timeout for monitored process
+[2023-01-23 10:10:13,956 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:13,957 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:14,011 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:14,011 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_#t~nondet2#1=0} Honda state: {ULTIMATE.start_main_#t~nondet2#1=0} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:14,041 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (12)] Ended with exit code 0
+[2023-01-23 10:10:14,042 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:14,043 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:14,050 INFO  L229       MonitoredProcess]: Starting monitored process 13 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:14,103 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:14,103 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:14,115 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (13)] Waiting until timeout for monitored process
+[2023-01-23 10:10:14,194 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:14,195 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_~y~0#1=0, ULTIMATE.start_main_~mat_rowSize~0#1=0} Honda state: {ULTIMATE.start_main_~y~0#1=0, ULTIMATE.start_main_~mat_rowSize~0#1=0} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:14,210 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (13)] Ended with exit code 0
+[2023-01-23 10:10:14,211 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:14,212 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:14,226 INFO  L229       MonitoredProcess]: Starting monitored process 14 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:14,319 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:14,319 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:14,332 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (14)] Waiting until timeout for monitored process
+[2023-01-23 10:10:14,375 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:14,375 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_#t~post6#1=0} Honda state: {ULTIMATE.start_main_#t~post6#1=0} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:14,382 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (14)] Ended with exit code 0
+[2023-01-23 10:10:14,382 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:14,383 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:14,386 INFO  L229       MonitoredProcess]: Starting monitored process 15 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:14,539 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:14,540 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:14,560 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (15)] Waiting until timeout for monitored process
+[2023-01-23 10:10:14,603 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:14,603 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_#t~post7#1=0} Honda state: {ULTIMATE.start_main_#t~post7#1=0} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:14,612 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (15)] Ended with exit code 0
+[2023-01-23 10:10:14,613 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:14,614 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:14,622 INFO  L229       MonitoredProcess]: Starting monitored process 16 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:14,656 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (16)] Waiting until timeout for monitored process
+[2023-01-23 10:10:14,688 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:14,688 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:14,771 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:14,771 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_~mat_colSize~0#1=0, ULTIMATE.start_main_~x~0#1=0} Honda state: {ULTIMATE.start_main_~mat_colSize~0#1=127, ULTIMATE.start_main_~x~0#1=0} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:14,779 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (16)] Ended with exit code 0
+[2023-01-23 10:10:14,780 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:14,780 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:14,790 INFO  L229       MonitoredProcess]: Starting monitored process 17 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:14,956 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (17)] Waiting until timeout for monitored process
+[2023-01-23 10:10:14,958 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:14,964 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:15,027 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:15,028 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_#t~post5#1=0} Honda state: {ULTIMATE.start_main_#t~post5#1=0} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:15,047 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (17)] Forceful destruction successful, exit code 0
+[2023-01-23 10:10:15,048 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:15,048 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:15,076 INFO  L229       MonitoredProcess]: Starting monitored process 18 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:15,130 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:15,137 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:15,130 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (18)] Waiting until timeout for monitored process
+[2023-01-23 10:10:15,229 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:15,229 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_#res#1=0} Honda state: {ULTIMATE.start_main_#res#1=0} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:15,286 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (18)] Forceful destruction successful, exit code 0
+[2023-01-23 10:10:15,287 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:15,287 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:15,302 INFO  L229       MonitoredProcess]: Starting monitored process 19 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:15,381 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (19)] Waiting until timeout for monitored process
+[2023-01-23 10:10:15,433 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:15,433 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:15,520 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:15,520 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_#t~nondet3#1=0} Honda state: {ULTIMATE.start_main_#t~nondet3#1=0} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:15,531 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (19)] Ended with exit code 0
+[2023-01-23 10:10:15,533 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:10:15,533 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:10:15,553 INFO  L229       MonitoredProcess]: Starting monitored process 20 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:10:15,626 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (20)] Waiting until timeout for monitored process
+[2023-01-23 10:10:15,629 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:10:15,630 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:10:15,777 INFO  L437          LassoAnalysis]: Proved nontermination for one component.
+[2023-01-23 10:10:15,777 INFO  L440          LassoAnalysis]: Non-Termination argument consisting of: Initial state: {ULTIMATE.start_main_#t~nondet0#1=0} Honda state: {ULTIMATE.start_main_#t~nondet0#1=0} Generalized eigenvectors: [] Lambdas: [] Nus: []
+[2023-01-23 10:10:15,800 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (20)] Ended with exit code 0
+[2023-01-23 10:10:15,892 INFO  L202        PluginConnector]: Adding new model de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer CFG 23.01 10:10:15 BoogieIcfgContainer
+[2023-01-23 10:10:15,893 INFO  L132        PluginConnector]: ------------------------ END BuchiAutomizer----------------------------
+[2023-01-23 10:10:15,894 INFO  L113        PluginConnector]: ------------------------Witness Printer----------------------------
+[2023-01-23 10:10:15,894 INFO  L271        PluginConnector]: Initializing Witness Printer...
+[2023-01-23 10:10:15,895 INFO  L275        PluginConnector]: Witness Printer initialized
+[2023-01-23 10:10:15,900 INFO  L185        PluginConnector]: Executing the observer RCFGCatcher from plugin Witness Printer for "de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder CFG 23.01 10:10:07" (3/4) ...
+[2023-01-23 10:10:15,906 INFO  L134         WitnessPrinter]: Generating witness for non-termination counterexample
+[2023-01-23 10:10:16,233 INFO  L141         WitnessManager]: Wrote witness to /home/linasvidziunas/Projects/ExtendingAPR/non-terminating-loops/Missing_Iterator_Update_4_NT.c/witness.graphml
+[2023-01-23 10:10:16,234 INFO  L132        PluginConnector]: ------------------------ END Witness Printer----------------------------
+[2023-01-23 10:10:16,247 INFO  L158              Benchmark]: Toolchain (without parser) took 11591.18ms. Allocated memory is still 125.8MB. Free memory was 103.4MB in the beginning and 61.4MB in the end (delta: 42.0MB). Peak memory consumption was 44.0MB. Max. memory is 16.1GB.
+[2023-01-23 10:10:16,248 INFO  L158              Benchmark]: CDTParser took 0.36ms. Allocated memory is still 62.9MB. Free memory was 40.8MB in the beginning and 40.7MB in the end (delta: 94.5kB). There was no memory consumed. Max. memory is 16.1GB.
+[2023-01-23 10:10:16,249 INFO  L158              Benchmark]: CACSL2BoogieTranslator took 1132.89ms. Allocated memory is still 125.8MB. Free memory was 103.0MB in the beginning and 93.9MB in the end (delta: 9.1MB). Peak memory consumption was 8.4MB. Max. memory is 16.1GB.
+[2023-01-23 10:10:16,250 INFO  L158              Benchmark]: Boogie Procedure Inliner took 58.17ms. Allocated memory is still 125.8MB. Free memory was 93.9MB in the beginning and 92.5MB in the end (delta: 1.4MB). Peak memory consumption was 2.1MB. Max. memory is 16.1GB.
+[2023-01-23 10:10:16,251 INFO  L158              Benchmark]: Boogie Preprocessor took 75.50ms. Allocated memory is still 125.8MB. Free memory was 92.5MB in the beginning and 91.4MB in the end (delta: 1.1MB). There was no memory consumed. Max. memory is 16.1GB.
+[2023-01-23 10:10:16,252 INFO  L158              Benchmark]: RCFGBuilder took 1362.53ms. Allocated memory is still 125.8MB. Free memory was 91.4MB in the beginning and 82.7MB in the end (delta: 8.7MB). Peak memory consumption was 8.4MB. Max. memory is 16.1GB.
+[2023-01-23 10:10:16,253 INFO  L158              Benchmark]: BuchiAutomizer took 8609.83ms. Allocated memory is still 125.8MB. Free memory was 82.7MB in the beginning and 62.6MB in the end (delta: 20.1MB). Peak memory consumption was 23.1MB. Max. memory is 16.1GB.
+[2023-01-23 10:10:16,254 INFO  L158              Benchmark]: Witness Printer took 339.83ms. Allocated memory is still 125.8MB. Free memory was 62.6MB in the beginning and 61.4MB in the end (delta: 1.2MB). There was no memory consumed. Max. memory is 16.1GB.
+[2023-01-23 10:10:16,259 INFO  L339   ainManager$Toolchain]: #######################  End [Toolchain 1] #######################
+ --- Results ---
+ * Results from de.uni_freiburg.informatik.ultimate.core:
+  - StatisticsResult: Toolchain Benchmarks
+    Benchmark results are:
+ * CDTParser took 0.36ms. Allocated memory is still 62.9MB. Free memory was 40.8MB in the beginning and 40.7MB in the end (delta: 94.5kB). There was no memory consumed. Max. memory is 16.1GB.
+ * CACSL2BoogieTranslator took 1132.89ms. Allocated memory is still 125.8MB. Free memory was 103.0MB in the beginning and 93.9MB in the end (delta: 9.1MB). Peak memory consumption was 8.4MB. Max. memory is 16.1GB.
+ * Boogie Procedure Inliner took 58.17ms. Allocated memory is still 125.8MB. Free memory was 93.9MB in the beginning and 92.5MB in the end (delta: 1.4MB). Peak memory consumption was 2.1MB. Max. memory is 16.1GB.
+ * Boogie Preprocessor took 75.50ms. Allocated memory is still 125.8MB. Free memory was 92.5MB in the beginning and 91.4MB in the end (delta: 1.1MB). There was no memory consumed. Max. memory is 16.1GB.
+ * RCFGBuilder took 1362.53ms. Allocated memory is still 125.8MB. Free memory was 91.4MB in the beginning and 82.7MB in the end (delta: 8.7MB). Peak memory consumption was 8.4MB. Max. memory is 16.1GB.
+ * BuchiAutomizer took 8609.83ms. Allocated memory is still 125.8MB. Free memory was 82.7MB in the beginning and 62.6MB in the end (delta: 20.1MB). Peak memory consumption was 23.1MB. Max. memory is 16.1GB.
+ * Witness Printer took 339.83ms. Allocated memory is still 125.8MB. Free memory was 62.6MB in the beginning and 61.4MB in the end (delta: 1.2MB). There was no memory consumed. Max. memory is 16.1GB.
+ * Results from de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction:
+  - StatisticsResult: Constructed decomposition of program
+    Trivial decomposition into one nonterminating module.
+  - StatisticsResult: Timing statistics
+    BüchiAutomizer plugin needed 8.2s and 1 iterations.  TraceHistogramMax:1. Analysis of lassos took 8.0s. Construction of modules took 0.0s. Büchi inclusion checks took 0.0s. Highest rank in rank-based complementation 0. Minimization of det autom 0. Minimization of nondet autom 0. Automata minimization No data available. Non-live state removal took 0.0s Buchi closure took 0.0s. Biggest automaton had -1 states and ocurred in iteration -1.	Nontrivial modules had stage [0, 0, 0, 0, 0].	InterpolantCoveringCapabilityFinite: 0/0	InterpolantCoveringCapabilityBuchi: 0/0	HoareTripleCheckerStatistics: 	LassoAnalysisResults: nont1 unkn0 SFLI0 SFLT0 conc0 concLT0 SILN0 SILU0 SILI0 SILT0 lasso0 LassoPreprocessingBenchmarks:   Lassos: inital26 mio100 ax100 hnf100 lsp50 ukn100 mio100 lsp100 div100 bol100 ite100 ukn100 eq133 hnf93 smp100 dnf100 smp100 tf108 neg92 sie102 LassoTerminationAnalysisBenchmarks: not availableLassoTerminationAnalysisBenchmarks: LassoNonterminationAnalysisSatFixpoint: 15	LassoNonterminationAnalysisSatUnbounded: 2	LassoNonterminationAnalysisUnsat: 0	LassoNonterminationAnalysisUnknown: 0	LassoNonterminationAnalysisTime: 4.2s	InitialAbstractionConstructionTime: 0.0s
+  - TerminationAnalysisResult: Nontermination possible
+    Buchi Automizer proved that your program is nonterminating for some inputs
+  - GeometricNonTerminationArgumentResult [Line: 17]: Nontermination argument in form of an infinite program execution.
+    Nontermination argument in form of an infinite execution
+State at position 0 is
+{y=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression@46f333ec=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@440221f8=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@34b42680=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression@7cd5139a=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@26a15682=0, mat_rowSize=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@17ff5259=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression@38a38fbc=0, \result=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@396111dd=0, mat_colSize=0, x=0, z=0}
+State at position 1 is
+{y=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression@46f333ec=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@440221f8=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@34b42680=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression@7cd5139a=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@26a15682=0, mat_rowSize=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@17ff5259=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression@38a38fbc=0, \result=0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@396111dd=0, mat_colSize=127, x=0, z=0}
+For i>1, the state at position i is
+{y=0 + sum_{k=0}^i 0, org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression@46f333ec=0 + sum_{k=0}^i 0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@440221f8=0 + sum_{k=0}^i 0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@34b42680=0 + sum_{k=0}^i 0, org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression@7cd5139a=0 + sum_{k=0}^i 0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@26a15682=0 + sum_{k=0}^i 0, mat_rowSize=0 + sum_{k=0}^i 0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@17ff5259=0 + sum_{k=0}^i 0, org.eclipse.cdt.internal.core.dom.parser.c.CASTUnaryExpression@38a38fbc=0 + sum_{k=0}^i 0, \result=0 + sum_{k=0}^i 0, org.eclipse.cdt.internal.core.dom.parser.c.CASTFunctionCallExpression@396111dd=0 + sum_{k=0}^i 0, mat_colSize=127 + sum_{k=0}^i 0, x=0 + sum_{k=0}^i 0, z=0 + sum_{k=0}^i -1 + 3}
+  - StatisticsResult: NonterminationArgumentStatistics
+    Unbounded Execution 2GEVs Lambdas: [1, 4, 1] Mus: [0, 0]
+  - NonterminatingLassoResult [Line: 17]: Nonterminating execution
+    Found a nonterminating execution for the following lasso shaped sequence of statements.
+Stem:
+[L10]              int x = __VERIFIER_nondet_int();
+[L11]              int mat_colSize = __VERIFIER_nondet_int();
+[L12]              int y = __VERIFIER_nondet_int();
+[L13]              int z = __VERIFIER_nondet_int();
+[L14]              int mat_rowSize = __VERIFIER_nondet_int();
+[L15]  COND FALSE  !(mat_colSize < 0 || mat_rowSize < 0 || mat_colSize > 65534 || mat_rowSize > 65534)
+[L17]              x = 0
+Loop:
+[L17]  COND TRUE   x < mat_colSize
+[L19]              y = 0
+[L19]  COND FALSE  !(y < mat_rowSize)
+[L23]              z++
+[L17]              z++
+End of lasso representation.
+RESULT: Ultimate proved your program to be incorrect!
+[2023-01-23 10:10:16,345 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (1)] Ended with exit code 0
+Received shutdown request...
+--- End real Ultimate output ---
+
+Execution finished normally
+Writing output log to file Ultimate.log
+Writing human readable error path to file UltimateCounterExample.errorpath
+Result:
+FALSE(TERM)

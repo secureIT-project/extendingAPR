@@ -1,0 +1,3 @@
+CHECK( init(main()), LTL(F end) )
+
+

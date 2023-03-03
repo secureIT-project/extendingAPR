@@ -1,0 +1,1350 @@
+Checking for termination
+Using default analysis
+Version 863304a1
+Calling Ultimate with: /usr/bin/java -Dosgi.configuration.area=/home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/data/config -Xmx15G -Xms4m -jar /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/plugins/org.eclipse.equinox.launcher_1.5.800.v20200727-1323.jar -data @noDefault -ultimatedata /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/data -tc /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/config/AutomizerTermination.xml -i /home/linasvidziunas/Projects/ExtendingAPR/termination/benchmark/loop/Reusing_Same_Loop_Iterator_2_NT.c -s /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/config/svcomp-Termination-64bit-Automizer_Default.epf --cacsl2boogietranslator.entry.function main --witnessprinter.witness.directory /home/linasvidziunas/Projects/ExtendingAPR/non-terminating-loops/Reusing_Same_Loop_Iterator_2_NT.c --witnessprinter.witness.filename witness.graphml --witnessprinter.write.witness.besides.input.file false --witnessprinter.graph.data.specification CHECK( init(main()), LTL(F end) )
+
+
+ --witnessprinter.graph.data.producer Automizer --witnessprinter.graph.data.architecture 64bit --witnessprinter.graph.data.programhash 0b92c6a4e96a6801b722f4c783e558b037e06151839ae73c49b46f217d0465cd
+--- Real Ultimate output ---
+This is Ultimate 0.2.3-release-863304a
+[2023-01-23 10:11:35,969 INFO  L177        SettingsManager]: Resetting all preferences to default values...
+[2023-01-23 10:11:35,977 INFO  L181        SettingsManager]: Resetting UltimateCore preferences to default values
+[2023-01-23 10:11:36,053 INFO  L184        SettingsManager]: Ultimate Commandline Interface provides no preferences, ignoring...
+[2023-01-23 10:11:36,055 INFO  L181        SettingsManager]: Resetting Boogie Preprocessor preferences to default values
+[2023-01-23 10:11:36,064 INFO  L181        SettingsManager]: Resetting Boogie Procedure Inliner preferences to default values
+[2023-01-23 10:11:36,074 INFO  L181        SettingsManager]: Resetting Abstract Interpretation preferences to default values
+[2023-01-23 10:11:36,083 INFO  L181        SettingsManager]: Resetting LassoRanker preferences to default values
+[2023-01-23 10:11:36,089 INFO  L181        SettingsManager]: Resetting Reaching Definitions preferences to default values
+[2023-01-23 10:11:36,139 INFO  L181        SettingsManager]: Resetting SyntaxChecker preferences to default values
+[2023-01-23 10:11:36,155 INFO  L181        SettingsManager]: Resetting Sifa preferences to default values
+[2023-01-23 10:11:36,164 INFO  L184        SettingsManager]: Büchi Program Product provides no preferences, ignoring...
+[2023-01-23 10:11:36,164 INFO  L181        SettingsManager]: Resetting LTL2Aut preferences to default values
+[2023-01-23 10:11:36,181 INFO  L181        SettingsManager]: Resetting PEA to Boogie preferences to default values
+[2023-01-23 10:11:36,186 INFO  L181        SettingsManager]: Resetting BlockEncodingV2 preferences to default values
+[2023-01-23 10:11:36,188 INFO  L181        SettingsManager]: Resetting ChcToBoogie preferences to default values
+[2023-01-23 10:11:36,190 INFO  L181        SettingsManager]: Resetting AutomataScriptInterpreter preferences to default values
+[2023-01-23 10:11:36,191 INFO  L181        SettingsManager]: Resetting BuchiAutomizer preferences to default values
+[2023-01-23 10:11:36,227 INFO  L181        SettingsManager]: Resetting CACSL2BoogieTranslator preferences to default values
+[2023-01-23 10:11:36,254 INFO  L181        SettingsManager]: Resetting CodeCheck preferences to default values
+[2023-01-23 10:11:36,257 INFO  L181        SettingsManager]: Resetting InvariantSynthesis preferences to default values
+[2023-01-23 10:11:36,260 INFO  L181        SettingsManager]: Resetting RCFGBuilder preferences to default values
+[2023-01-23 10:11:36,263 INFO  L181        SettingsManager]: Resetting Referee preferences to default values
+[2023-01-23 10:11:36,264 INFO  L181        SettingsManager]: Resetting TraceAbstraction preferences to default values
+[2023-01-23 10:11:36,282 INFO  L184        SettingsManager]: TraceAbstractionConcurrent provides no preferences, ignoring...
+[2023-01-23 10:11:36,283 INFO  L184        SettingsManager]: TraceAbstractionWithAFAs provides no preferences, ignoring...
+[2023-01-23 10:11:36,283 INFO  L181        SettingsManager]: Resetting TreeAutomizer preferences to default values
+[2023-01-23 10:11:36,287 INFO  L181        SettingsManager]: Resetting IcfgToChc preferences to default values
+[2023-01-23 10:11:36,288 INFO  L181        SettingsManager]: Resetting IcfgTransformer preferences to default values
+[2023-01-23 10:11:36,291 INFO  L184        SettingsManager]: ReqToTest provides no preferences, ignoring...
+[2023-01-23 10:11:36,291 INFO  L181        SettingsManager]: Resetting Boogie Printer preferences to default values
+[2023-01-23 10:11:36,293 INFO  L181        SettingsManager]: Resetting ChcSmtPrinter preferences to default values
+[2023-01-23 10:11:36,297 INFO  L181        SettingsManager]: Resetting ReqPrinter preferences to default values
+[2023-01-23 10:11:36,298 INFO  L181        SettingsManager]: Resetting Witness Printer preferences to default values
+[2023-01-23 10:11:36,299 INFO  L184        SettingsManager]: Boogie PL CUP Parser provides no preferences, ignoring...
+[2023-01-23 10:11:36,300 INFO  L181        SettingsManager]: Resetting CDTParser preferences to default values
+[2023-01-23 10:11:36,301 INFO  L184        SettingsManager]: AutomataScriptParser provides no preferences, ignoring...
+[2023-01-23 10:11:36,301 INFO  L184        SettingsManager]: ReqParser provides no preferences, ignoring...
+[2023-01-23 10:11:36,302 INFO  L181        SettingsManager]: Resetting SmtParser preferences to default values
+[2023-01-23 10:11:36,303 INFO  L181        SettingsManager]: Resetting Witness Parser preferences to default values
+[2023-01-23 10:11:36,304 INFO  L188        SettingsManager]: Finished resetting all preferences to default values...
+[2023-01-23 10:11:36,313 INFO  L101        SettingsManager]: Beginning loading settings from /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/config/svcomp-Termination-64bit-Automizer_Default.epf
+[2023-01-23 10:11:36,481 INFO  L113        SettingsManager]: Loading preferences was successful
+[2023-01-23 10:11:36,481 INFO  L115        SettingsManager]: Preferences different from defaults after loading the file:
+[2023-01-23 10:11:36,483 INFO  L136        SettingsManager]: Preferences of UltimateCore differ from their defaults:
+[2023-01-23 10:11:36,483 INFO  L138        SettingsManager]:  * Log level for class=de.uni_freiburg.informatik.ultimate.lib.smtlibutils.quantifier.QuantifierPusher=ERROR;
+[2023-01-23 10:11:36,485 INFO  L136        SettingsManager]: Preferences of BlockEncodingV2 differ from their defaults:
+[2023-01-23 10:11:36,486 INFO  L138        SettingsManager]:  * Create parallel compositions if possible=false
+[2023-01-23 10:11:36,486 INFO  L138        SettingsManager]:  * Use SBE=true
+[2023-01-23 10:11:36,486 INFO  L136        SettingsManager]: Preferences of BuchiAutomizer differ from their defaults:
+[2023-01-23 10:11:36,487 INFO  L138        SettingsManager]:  * NCSB implementation=INTSET_LAZY3
+[2023-01-23 10:11:36,487 INFO  L138        SettingsManager]:  * Use old map elimination=false
+[2023-01-23 10:11:36,489 INFO  L138        SettingsManager]:  * Use external solver (rank synthesis)=false
+[2023-01-23 10:11:36,489 INFO  L138        SettingsManager]:  * Use only trivial implications for array writes=true
+[2023-01-23 10:11:36,490 INFO  L138        SettingsManager]:  * Rank analysis=LINEAR_WITH_GUESSES
+[2023-01-23 10:11:36,490 INFO  L136        SettingsManager]: Preferences of CACSL2BoogieTranslator differ from their defaults:
+[2023-01-23 10:11:36,490 INFO  L138        SettingsManager]:  * Check unreachability of error function in SV-COMP mode=false
+[2023-01-23 10:11:36,491 INFO  L138        SettingsManager]:  * Overapproximate operations on floating types=true
+[2023-01-23 10:11:36,491 INFO  L138        SettingsManager]:  * Check division by zero=IGNORE
+[2023-01-23 10:11:36,491 INFO  L138        SettingsManager]:  * Pointer to allocated memory at dereference=ASSUME
+[2023-01-23 10:11:36,495 INFO  L138        SettingsManager]:  * If two pointers are subtracted or compared they have the same base address=ASSUME
+[2023-01-23 10:11:36,496 INFO  L138        SettingsManager]:  * Check array bounds for arrays that are off heap=ASSUME
+[2023-01-23 10:11:36,496 INFO  L138        SettingsManager]:  * Check if freed pointer was valid=false
+[2023-01-23 10:11:36,496 INFO  L138        SettingsManager]:  * Assume nondeterminstic values are in range=false
+[2023-01-23 10:11:36,497 INFO  L138        SettingsManager]:  * Use constant arrays=true
+[2023-01-23 10:11:36,497 INFO  L138        SettingsManager]:  * Pointer base address is valid at dereference=ASSUME
+[2023-01-23 10:11:36,498 INFO  L136        SettingsManager]: Preferences of RCFGBuilder differ from their defaults:
+[2023-01-23 10:11:36,498 INFO  L138        SettingsManager]:  * Size of a code block=SequenceOfStatements
+[2023-01-23 10:11:36,498 INFO  L136        SettingsManager]: Preferences of TraceAbstraction differ from their defaults:
+[2023-01-23 10:11:36,499 INFO  L138        SettingsManager]:  * Trace refinement strategy=CAMEL
+[2023-01-23 10:11:36,501 INFO  L136        SettingsManager]: Preferences of IcfgTransformer differ from their defaults:
+[2023-01-23 10:11:36,501 INFO  L138        SettingsManager]:  * TransformationType=MODULO_NEIGHBOR
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector$1 (file:/home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/plugins/com.sun.xml.bind_2.2.0.v201505121915.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator: Entry function -> main
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Witness directory -> /home/linasvidziunas/Projects/ExtendingAPR/non-terminating-loops/Reusing_Same_Loop_Iterator_2_NT.c
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Witness filename -> witness.graphml
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Write witness besides input file -> false
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Graph data specification -> CHECK( init(main()), LTL(F end) )
+
+
+
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Graph data producer -> Automizer
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Graph data architecture -> 64bit
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.witnessprinter: Graph data programhash -> 0b92c6a4e96a6801b722f4c783e558b037e06151839ae73c49b46f217d0465cd
+[2023-01-23 10:11:38,062 INFO  L75    nceAwareModelManager]: Repository-Root is: /tmp
+[2023-01-23 10:11:38,189 INFO  L261   ainManager$Toolchain]: [Toolchain 1]: Applicable parser(s) successfully (re)initialized
+[2023-01-23 10:11:38,194 INFO  L217   ainManager$Toolchain]: [Toolchain 1]: Toolchain selected.
+[2023-01-23 10:11:38,209 INFO  L271        PluginConnector]: Initializing CDTParser...
+[2023-01-23 10:11:38,210 INFO  L275        PluginConnector]: CDTParser initialized
+[2023-01-23 10:11:38,212 INFO  L432   ainManager$Toolchain]: [Toolchain 1]: Parsing single file: /home/linasvidziunas/Projects/ExtendingAPR/termination/benchmark/loop/Reusing_Same_Loop_Iterator_2_NT.c
+[2023-01-23 10:11:44,940 INFO  L500              CDTParser]: Created temporary CDT project at NULL
+[2023-01-23 10:11:45,856 INFO  L351              CDTParser]: Found 1 translation units.
+[2023-01-23 10:11:45,857 INFO  L172              CDTParser]: Scanning /home/linasvidziunas/Projects/ExtendingAPR/termination/benchmark/loop/Reusing_Same_Loop_Iterator_2_NT.c
+[2023-01-23 10:11:45,928 INFO  L394              CDTParser]: About to delete temporary CDT project at /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/data/221d9a1b3/5cfeaf7202f343ca8af08a82859f83a9/FLAG7a8310597
+[2023-01-23 10:11:45,989 INFO  L402              CDTParser]: Successfully deleted /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/data/221d9a1b3/5cfeaf7202f343ca8af08a82859f83a9
+[2023-01-23 10:11:45,999 INFO  L299   ainManager$Toolchain]: ####################### [Toolchain 1] #######################
+[2023-01-23 10:11:46,015 INFO  L131        ToolchainWalker]: Walking toolchain with 6 elements.
+[2023-01-23 10:11:46,032 INFO  L113        PluginConnector]: ------------------------CACSL2BoogieTranslator----------------------------
+[2023-01-23 10:11:46,042 INFO  L271        PluginConnector]: Initializing CACSL2BoogieTranslator...
+[2023-01-23 10:11:46,063 INFO  L275        PluginConnector]: CACSL2BoogieTranslator initialized
+[2023-01-23 10:11:46,074 INFO  L185        PluginConnector]: Executing the observer ACSLObjectContainerObserver from plugin CACSL2BoogieTranslator for "CDTParser AST 23.01 10:11:45" (1/1) ...
+[2023-01-23 10:11:46,082 INFO  L205        PluginConnector]: Invalid model from CACSL2BoogieTranslator for observer de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator.ACSLObjectContainerObserver@365a4c7c and model type de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:11:46, skipping insertion in model container
+[2023-01-23 10:11:46,083 INFO  L185        PluginConnector]: Executing the observer CACSL2BoogieTranslatorObserver from plugin CACSL2BoogieTranslator for "CDTParser AST 23.01 10:11:45" (1/1) ...
+[2023-01-23 10:11:46,121 INFO  L145         MainTranslator]: Starting translation in SV-COMP mode 
+[2023-01-23 10:11:46,209 INFO  L178         MainTranslator]: Built tables and reachable declarations
+[2023-01-23 10:11:47,106 INFO  L210          PostProcessor]: Analyzing one entry point: main
+[2023-01-23 10:11:47,171 INFO  L203         MainTranslator]: Completed pre-run
+[2023-01-23 10:11:47,283 INFO  L210          PostProcessor]: Analyzing one entry point: main
+[2023-01-23 10:11:47,305 INFO  L208         MainTranslator]: Completed translation
+[2023-01-23 10:11:47,307 INFO  L202        PluginConnector]: Adding new model de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:11:47 WrapperNode
+[2023-01-23 10:11:47,308 INFO  L132        PluginConnector]: ------------------------ END CACSL2BoogieTranslator----------------------------
+[2023-01-23 10:11:47,310 INFO  L113        PluginConnector]: ------------------------Boogie Procedure Inliner----------------------------
+[2023-01-23 10:11:47,311 INFO  L271        PluginConnector]: Initializing Boogie Procedure Inliner...
+[2023-01-23 10:11:47,311 INFO  L275        PluginConnector]: Boogie Procedure Inliner initialized
+[2023-01-23 10:11:47,334 INFO  L185        PluginConnector]: Executing the observer TypeChecker from plugin Boogie Procedure Inliner for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:11:47" (1/1) ...
+[2023-01-23 10:11:47,355 INFO  L185        PluginConnector]: Executing the observer Inliner from plugin Boogie Procedure Inliner for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:11:47" (1/1) ...
+[2023-01-23 10:11:47,407 INFO  L138                Inliner]: procedures = 3, calls = 2, calls flagged for inlining = 2, calls inlined = 2, statements flattened = 27
+[2023-01-23 10:11:47,408 INFO  L132        PluginConnector]: ------------------------ END Boogie Procedure Inliner----------------------------
+[2023-01-23 10:11:47,418 INFO  L113        PluginConnector]: ------------------------Boogie Preprocessor----------------------------
+[2023-01-23 10:11:47,421 INFO  L271        PluginConnector]: Initializing Boogie Preprocessor...
+[2023-01-23 10:11:47,421 INFO  L275        PluginConnector]: Boogie Preprocessor initialized
+[2023-01-23 10:11:47,441 INFO  L185        PluginConnector]: Executing the observer EnsureBoogieModelObserver from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:11:47" (1/1) ...
+[2023-01-23 10:11:47,446 INFO  L185        PluginConnector]: Executing the observer TypeChecker from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:11:47" (1/1) ...
+[2023-01-23 10:11:47,447 INFO  L185        PluginConnector]: Executing the observer ConstExpander from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:11:47" (1/1) ...
+[2023-01-23 10:11:47,448 INFO  L185        PluginConnector]: Executing the observer StructExpander from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:11:47" (1/1) ...
+[2023-01-23 10:11:47,452 INFO  L185        PluginConnector]: Executing the observer UnstructureCode from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:11:47" (1/1) ...
+[2023-01-23 10:11:47,459 INFO  L185        PluginConnector]: Executing the observer FunctionInliner from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:11:47" (1/1) ...
+[2023-01-23 10:11:47,460 INFO  L185        PluginConnector]: Executing the observer LTLStepAnnotator from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:11:47" (1/1) ...
+[2023-01-23 10:11:47,464 INFO  L185        PluginConnector]: Executing the observer BoogieSymbolTableConstructor from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:11:47" (1/1) ...
+[2023-01-23 10:11:47,466 INFO  L132        PluginConnector]: ------------------------ END Boogie Preprocessor----------------------------
+[2023-01-23 10:11:47,468 INFO  L113        PluginConnector]: ------------------------RCFGBuilder----------------------------
+[2023-01-23 10:11:47,470 INFO  L271        PluginConnector]: Initializing RCFGBuilder...
+[2023-01-23 10:11:47,470 INFO  L275        PluginConnector]: RCFGBuilder initialized
+[2023-01-23 10:11:47,472 INFO  L185        PluginConnector]: Executing the observer RCFGBuilderObserver from plugin RCFGBuilder for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:11:47" (1/1) ...
+[2023-01-23 10:11:47,494 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:11:47,530 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:11:47,621 INFO  L229       MonitoredProcess]: Starting monitored process 1 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:11:47,690 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (1)] Waiting until timeout for monitored process
+[2023-01-23 10:11:47,846 INFO  L130     BoogieDeclarations]: Found specification of procedure ULTIMATE.start
+[2023-01-23 10:11:47,846 INFO  L138     BoogieDeclarations]: Found implementation of procedure ULTIMATE.start
+[2023-01-23 10:11:48,032 INFO  L235             CfgBuilder]: Building ICFG
+[2023-01-23 10:11:48,044 INFO  L261             CfgBuilder]: Building CFG for each procedure with an implementation
+[2023-01-23 10:11:48,485 INFO  L276             CfgBuilder]: Performing block encoding
+[2023-01-23 10:11:48,554 INFO  L295             CfgBuilder]: Using the 1 location(s) as analysis (start of procedure ULTIMATE.start)
+[2023-01-23 10:11:48,555 INFO  L300             CfgBuilder]: Removed 2 assume(true) statements.
+[2023-01-23 10:11:48,559 INFO  L202        PluginConnector]: Adding new model de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder CFG 23.01 10:11:48 BoogieIcfgContainer
+[2023-01-23 10:11:48,559 INFO  L132        PluginConnector]: ------------------------ END RCFGBuilder----------------------------
+[2023-01-23 10:11:48,561 INFO  L113        PluginConnector]: ------------------------BuchiAutomizer----------------------------
+[2023-01-23 10:11:48,561 INFO  L271        PluginConnector]: Initializing BuchiAutomizer...
+[2023-01-23 10:11:48,583 INFO  L275        PluginConnector]: BuchiAutomizer initialized
+[2023-01-23 10:11:48,609 INFO  L99          BuchiAutomizer]: Safety of program was proven or not checked, starting termination analysis
+[2023-01-23 10:11:48,609 INFO  L185        PluginConnector]: Executing the observer BuchiAutomizerObserver from plugin BuchiAutomizer for "CDTParser AST 23.01 10:11:45" (1/3) ...
+[2023-01-23 10:11:48,611 INFO  L205        PluginConnector]: Invalid model from BuchiAutomizer for observer de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer.BuchiAutomizerObserver@1a631162 and model type de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer AST 23.01 10:11:48, skipping insertion in model container
+[2023-01-23 10:11:48,612 INFO  L99          BuchiAutomizer]: Safety of program was proven or not checked, starting termination analysis
+[2023-01-23 10:11:48,612 INFO  L185        PluginConnector]: Executing the observer BuchiAutomizerObserver from plugin BuchiAutomizer for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 23.01 10:11:47" (2/3) ...
+[2023-01-23 10:11:48,613 INFO  L205        PluginConnector]: Invalid model from BuchiAutomizer for observer de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer.BuchiAutomizerObserver@1a631162 and model type de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer AST 23.01 10:11:48, skipping insertion in model container
+[2023-01-23 10:11:48,614 INFO  L99          BuchiAutomizer]: Safety of program was proven or not checked, starting termination analysis
+[2023-01-23 10:11:48,614 INFO  L185        PluginConnector]: Executing the observer BuchiAutomizerObserver from plugin BuchiAutomizer for "de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder CFG 23.01 10:11:48" (3/3) ...
+[2023-01-23 10:11:48,616 INFO  L332   chiAutomizerObserver]: Analyzing ICFG Reusing_Same_Loop_Iterator_2_NT.c
+[2023-01-23 10:11:48,816 INFO  L303   stractBuchiCegarLoop]: Interprodecural is true
+[2023-01-23 10:11:48,816 INFO  L304   stractBuchiCegarLoop]: Hoare is false
+[2023-01-23 10:11:48,817 INFO  L305   stractBuchiCegarLoop]: Compute interpolants for ForwardPredicates
+[2023-01-23 10:11:48,817 INFO  L306   stractBuchiCegarLoop]: Backedges is STRAIGHT_LINE
+[2023-01-23 10:11:48,818 INFO  L307   stractBuchiCegarLoop]: Determinization is PREDICATE_ABSTRACTION
+[2023-01-23 10:11:48,818 INFO  L308   stractBuchiCegarLoop]: Difference is false
+[2023-01-23 10:11:48,818 INFO  L309   stractBuchiCegarLoop]: Minimize is MINIMIZE_SEVPA
+[2023-01-23 10:11:48,819 INFO  L313   stractBuchiCegarLoop]: ======== Iteration 0 == of CEGAR loop == BuchiAutomatonCegarLoop ========
+[2023-01-23 10:11:48,831 INFO  L72            BuchiIsEmpty]: Start buchiIsEmpty. Operand  has 11 states, 10 states have (on average 1.5) internal successors, (15), 10 states have internal predecessors, (15), 0 states have call successors, (0), 0 states have call predecessors, (0), 0 states have return successors, (0), 0 states have call predecessors, (0), 0 states have call successors, (0)
+[2023-01-23 10:11:48,900 INFO  L131   ngComponentsAnalysis]: Automaton has 1 accepting balls. 4
+[2023-01-23 10:11:48,901 INFO  L87            BuchiIsEmpty]: Finished buchiIsEmpty Result is false
+[2023-01-23 10:11:48,901 INFO  L119           BuchiIsEmpty]: Starting construction of run
+[2023-01-23 10:11:48,920 INFO  L148   hiAutomatonCegarLoop]: Counterexample stem histogram [1, 1, 1]
+[2023-01-23 10:11:48,920 INFO  L149   hiAutomatonCegarLoop]: Counterexample loop histogram [1, 1, 1]
+[2023-01-23 10:11:48,920 INFO  L335   stractBuchiCegarLoop]: ======== Iteration 1 ============
+[2023-01-23 10:11:48,921 INFO  L72            BuchiIsEmpty]: Start buchiIsEmpty. Operand  has 11 states, 10 states have (on average 1.5) internal successors, (15), 10 states have internal predecessors, (15), 0 states have call successors, (0), 0 states have call predecessors, (0), 0 states have return successors, (0), 0 states have call predecessors, (0), 0 states have call successors, (0)
+[2023-01-23 10:11:48,931 INFO  L131   ngComponentsAnalysis]: Automaton has 1 accepting balls. 4
+[2023-01-23 10:11:48,932 INFO  L87            BuchiIsEmpty]: Finished buchiIsEmpty Result is false
+[2023-01-23 10:11:48,932 INFO  L119           BuchiIsEmpty]: Starting construction of run
+[2023-01-23 10:11:48,933 INFO  L148   hiAutomatonCegarLoop]: Counterexample stem histogram [1, 1, 1]
+[2023-01-23 10:11:48,934 INFO  L149   hiAutomatonCegarLoop]: Counterexample loop histogram [1, 1, 1]
+[2023-01-23 10:11:48,963 INFO  L748   eck$LassoCheckResult]: Stem: 6#$Ultimate##0true assume { :begin_inline_ULTIMATE.init } true; 8#L-1true assume { :end_inline_ULTIMATE.init } true;assume { :begin_inline_main } true;havoc main_#res#1;havoc main_#t~nondet0#1, main_#t~post2#1, main_#t~post1#1, main_~i~0#1, main_~j~0#1, main_~num~0#1;havoc main_~i~0#1;havoc main_~j~0#1;main_~num~0#1 := main_#t~nondet0#1;havoc main_#t~nondet0#1; 11#L12true assume !(main_~num~0#1 > 65534);main_~i~0#1 := 0; 9#L14-3true 
+[2023-01-23 10:11:48,964 INFO  L750   eck$LassoCheckResult]: Loop: 9#L14-3true assume !!(main_~i~0#1 < main_~num~0#1);main_~i~0#1 := 0; 5#L16-3true assume !(main_~i~0#1 < 3); 10#L14-2true main_#t~post1#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post1#1;havoc main_#t~post1#1; 9#L14-3true 
+[2023-01-23 10:11:48,985 INFO  L144       PredicateUnifier]: Initialized classic predicate unifier
+[2023-01-23 10:11:48,986 INFO  L85        PathProgramCache]: Analyzing trace with hash 29860, now seen corresponding path program 1 times
+[2023-01-23 10:11:49,022 INFO  L118   FreeRefinementEngine]: Executing refinement strategy CAMEL
+[2023-01-23 10:11:49,024 INFO  L333   FreeRefinementEngine]: Using trace check IpTcStrategyModuleSmtInterpolCraig [881543631]
+[2023-01-23 10:11:49,041 INFO  L95    rtionOrderModulation]: Keeping assertion order NOT_INCREMENTALLY
+[2023-01-23 10:11:49,042 INFO  L127          SolverBuilder]: Constructing new instance of SMTInterpol with explicit timeout -1 ms and remaining time -1 ms
+[2023-01-23 10:11:49,366 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:11:49,372 INFO  L356             TraceCheck]: Trace is feasible, we will do another trace check, this time with branch encoders.
+[2023-01-23 10:11:49,415 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:11:49,492 INFO  L130   FreeRefinementEngine]: Strategy CAMEL found a feasible trace
+[2023-01-23 10:11:49,497 INFO  L144       PredicateUnifier]: Initialized classic predicate unifier
+[2023-01-23 10:11:49,498 INFO  L85        PathProgramCache]: Analyzing trace with hash 44886, now seen corresponding path program 1 times
+[2023-01-23 10:11:49,498 INFO  L118   FreeRefinementEngine]: Executing refinement strategy CAMEL
+[2023-01-23 10:11:49,524 INFO  L333   FreeRefinementEngine]: Using trace check IpTcStrategyModuleSmtInterpolCraig [727759132]
+[2023-01-23 10:11:49,525 INFO  L95    rtionOrderModulation]: Keeping assertion order NOT_INCREMENTALLY
+[2023-01-23 10:11:49,525 INFO  L127          SolverBuilder]: Constructing new instance of SMTInterpol with explicit timeout -1 ms and remaining time -1 ms
+[2023-01-23 10:11:49,583 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2023-01-23 10:11:49,801 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2023-01-23 10:11:49,802 INFO  L136   FreeRefinementEngine]: Strategy CAMEL found an infeasible trace
+[2023-01-23 10:11:49,802 INFO  L333   FreeRefinementEngine]: Using interpolant generator IpTcStrategyModuleSmtInterpolCraig [727759132]
+[2023-01-23 10:11:49,803 INFO  L157   FreeRefinementEngine]: IpTcStrategyModuleSmtInterpolCraig [727759132] provided 1 perfect and 0 imperfect interpolant sequences
+[2023-01-23 10:11:49,804 INFO  L184   FreeRefinementEngine]: Found 1 perfect and 0 imperfect interpolant sequences.
+[2023-01-23 10:11:49,816 INFO  L197   FreeRefinementEngine]: Number of different interpolants: perfect sequences [2] imperfect sequences [] total 2
+[2023-01-23 10:11:49,816 INFO  L121   tionRefinementEngine]: Using interpolant automaton builder IpAbStrategyModuleStraightlineAll [1824194641]
+[2023-01-23 10:11:49,826 INFO  L85    oduleStraightlineAll]: Using 1 perfect interpolants to construct interpolant automaton
+[2023-01-23 10:11:49,836 INFO  L765   eck$LassoCheckResult]: loop already infeasible
+[2023-01-23 10:11:49,842 INFO  L100   FreeRefinementEngine]: Using predicate unifier PredicateUnifier provided by strategy CAMEL
+[2023-01-23 10:11:49,938 INFO  L143   InterpolantAutomaton]: Constructing interpolant automaton starting with 3 interpolants.
+[2023-01-23 10:11:49,954 INFO  L145   InterpolantAutomaton]: CoverageRelationStatistics Valid=3, Invalid=3, Unknown=0, NotChecked=0, Total=6
+[2023-01-23 10:11:49,959 INFO  L87              Difference]: Start difference. First operand  has 11 states, 10 states have (on average 1.5) internal successors, (15), 10 states have internal predecessors, (15), 0 states have call successors, (0), 0 states have call predecessors, (0), 0 states have return successors, (0), 0 states have call predecessors, (0), 0 states have call successors, (0) Second operand  has 3 states, 3 states have (on average 1.0) internal successors, (3), 2 states have internal predecessors, (3), 0 states have call successors, (0), 0 states have call predecessors, (0), 0 states have return successors, (0), 0 states have call predecessors, (0), 0 states have call successors, (0)
+[2023-01-23 10:11:50,145 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2023-01-23 10:11:50,146 INFO  L93              Difference]: Finished difference Result 18 states and 20 transitions.
+[2023-01-23 10:11:50,148 INFO  L82        GeneralOperation]: Start removeNonLiveStates. Operand 18 states and 20 transitions.
+[2023-01-23 10:11:50,150 INFO  L131   ngComponentsAnalysis]: Automaton has 1 accepting balls. 6
+[2023-01-23 10:11:50,156 INFO  L88        GeneralOperation]: Finished removeNonLiveStates. Reduced from 18 states to 10 states and 11 transitions.
+[2023-01-23 10:11:50,158 INFO  L87         BuchiClosureNwa]: Accepting states before buchiClosure: 10
+[2023-01-23 10:11:50,159 INFO  L106        BuchiClosureNwa]: Accepting states after buchiClosure: 10
+[2023-01-23 10:11:50,162 INFO  L73         IsDeterministic]: Start isDeterministic. Operand 10 states and 11 transitions.
+[2023-01-23 10:11:50,163 INFO  L80         IsDeterministic]: Finished isDeterministic. Operand is deterministic.
+[2023-01-23 10:11:50,163 INFO  L218   hiAutomatonCegarLoop]: Abstraction has 10 states and 11 transitions.
+[2023-01-23 10:11:50,273 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 10 states and 11 transitions.
+[2023-01-23 10:11:50,319 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 10 to 8.
+[2023-01-23 10:11:50,320 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand  has 8 states, 8 states have (on average 1.125) internal successors, (9), 7 states have internal predecessors, (9), 0 states have call successors, (0), 0 states have call predecessors, (0), 0 states have return successors, (0), 0 states have call predecessors, (0), 0 states have call successors, (0)
+[2023-01-23 10:11:50,329 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 8 states to 8 states and 9 transitions.
+[2023-01-23 10:11:50,331 INFO  L240   hiAutomatonCegarLoop]: Abstraction has 8 states and 9 transitions.
+[2023-01-23 10:11:50,353 INFO  L141   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 3 states. 
+[2023-01-23 10:11:50,368 INFO  L428   stractBuchiCegarLoop]: Abstraction has 8 states and 9 transitions.
+[2023-01-23 10:11:50,369 INFO  L335   stractBuchiCegarLoop]: ======== Iteration 2 ============
+[2023-01-23 10:11:50,369 INFO  L72            BuchiIsEmpty]: Start buchiIsEmpty. Operand 8 states and 9 transitions.
+[2023-01-23 10:11:50,370 INFO  L131   ngComponentsAnalysis]: Automaton has 1 accepting balls. 5
+[2023-01-23 10:11:50,370 INFO  L87            BuchiIsEmpty]: Finished buchiIsEmpty Result is false
+[2023-01-23 10:11:50,371 INFO  L119           BuchiIsEmpty]: Starting construction of run
+[2023-01-23 10:11:50,371 INFO  L148   hiAutomatonCegarLoop]: Counterexample stem histogram [1, 1, 1]
+[2023-01-23 10:11:50,372 INFO  L149   hiAutomatonCegarLoop]: Counterexample loop histogram [1, 1, 1, 1, 1]
+[2023-01-23 10:11:50,373 INFO  L748   eck$LassoCheckResult]: Stem: 41#$Ultimate##0 assume { :begin_inline_ULTIMATE.init } true; 42#L-1 assume { :end_inline_ULTIMATE.init } true;assume { :begin_inline_main } true;havoc main_#res#1;havoc main_#t~nondet0#1, main_#t~post2#1, main_#t~post1#1, main_~i~0#1, main_~j~0#1, main_~num~0#1;havoc main_~i~0#1;havoc main_~j~0#1;main_~num~0#1 := main_#t~nondet0#1;havoc main_#t~nondet0#1; 43#L12 assume !(main_~num~0#1 > 65534);main_~i~0#1 := 0; 45#L14-3 
+[2023-01-23 10:11:50,373 INFO  L750   eck$LassoCheckResult]: Loop: 45#L14-3 assume !!(main_~i~0#1 < main_~num~0#1);main_~i~0#1 := 0; 38#L16-3 assume !!(main_~i~0#1 < 3); 39#L16-2 main_#t~post2#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post2#1;havoc main_#t~post2#1; 40#L16-3 assume !(main_~i~0#1 < 3); 44#L14-2 main_#t~post1#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post1#1;havoc main_#t~post1#1; 45#L14-3 
+[2023-01-23 10:11:50,374 INFO  L144       PredicateUnifier]: Initialized classic predicate unifier
+[2023-01-23 10:11:50,374 INFO  L85        PathProgramCache]: Analyzing trace with hash 29860, now seen corresponding path program 2 times
+[2023-01-23 10:11:50,375 INFO  L118   FreeRefinementEngine]: Executing refinement strategy CAMEL
+[2023-01-23 10:11:50,375 INFO  L333   FreeRefinementEngine]: Using trace check IpTcStrategyModuleSmtInterpolCraig [1232808532]
+[2023-01-23 10:11:50,376 INFO  L95    rtionOrderModulation]: Keeping assertion order NOT_INCREMENTALLY
+[2023-01-23 10:11:50,376 INFO  L127          SolverBuilder]: Constructing new instance of SMTInterpol with explicit timeout -1 ms and remaining time -1 ms
+[2023-01-23 10:11:50,401 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:11:50,408 INFO  L356             TraceCheck]: Trace is feasible, we will do another trace check, this time with branch encoders.
+[2023-01-23 10:11:50,413 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:11:50,438 INFO  L130   FreeRefinementEngine]: Strategy CAMEL found a feasible trace
+[2023-01-23 10:11:50,439 INFO  L144       PredicateUnifier]: Initialized classic predicate unifier
+[2023-01-23 10:11:50,440 INFO  L85        PathProgramCache]: Analyzing trace with hash 43191864, now seen corresponding path program 1 times
+[2023-01-23 10:11:50,445 INFO  L118   FreeRefinementEngine]: Executing refinement strategy CAMEL
+[2023-01-23 10:11:50,452 INFO  L333   FreeRefinementEngine]: Using trace check IpTcStrategyModuleSmtInterpolCraig [1780992798]
+[2023-01-23 10:11:50,452 INFO  L95    rtionOrderModulation]: Keeping assertion order NOT_INCREMENTALLY
+[2023-01-23 10:11:50,453 INFO  L127          SolverBuilder]: Constructing new instance of SMTInterpol with explicit timeout -1 ms and remaining time -1 ms
+[2023-01-23 10:11:50,463 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2023-01-23 10:11:50,655 INFO  L134       CoverageAnalysis]: Checked inductivity of 1 backedges. 0 proven. 1 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2023-01-23 10:11:50,658 INFO  L136   FreeRefinementEngine]: Strategy CAMEL found an infeasible trace
+[2023-01-23 10:11:50,658 INFO  L333   FreeRefinementEngine]: Using interpolant generator IpTcStrategyModuleSmtInterpolCraig [1780992798]
+[2023-01-23 10:11:50,659 INFO  L157   FreeRefinementEngine]: IpTcStrategyModuleSmtInterpolCraig [1780992798] provided 0 perfect and 1 imperfect interpolant sequences
+[2023-01-23 10:11:50,660 INFO  L333   FreeRefinementEngine]: Using interpolant generator IpTcStrategyModuleZ3 [639634080]
+[2023-01-23 10:11:50,661 INFO  L95    rtionOrderModulation]: Keeping assertion order NOT_INCREMENTALLY
+[2023-01-23 10:11:50,662 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 -smt2 -in SMTLIB2_COMPLIANT=true
+[2023-01-23 10:11:50,664 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:11:50,686 INFO  L229       MonitoredProcess]: Starting monitored process 2 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 -smt2 -in SMTLIB2_COMPLIANT=true (exit command is (exit), workingDir is null)
+[2023-01-23 10:11:50,724 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 -smt2 -in SMTLIB2_COMPLIANT=true (2)] Waiting until timeout for monitored process
+[2023-01-23 10:11:50,815 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2023-01-23 10:11:50,817 INFO  L263         TraceCheckSpWp]: Trace formula consists of 11 conjuncts, 3 conjunts are in the unsatisfiable core
+[2023-01-23 10:11:50,820 INFO  L286         TraceCheckSpWp]: Computing forward predicates...
+[2023-01-23 10:11:50,961 INFO  L134       CoverageAnalysis]: Checked inductivity of 1 backedges. 0 proven. 1 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2023-01-23 10:11:50,973 INFO  L328         TraceCheckSpWp]: Computing backward predicates...
+[2023-01-23 10:11:51,155 INFO  L134       CoverageAnalysis]: Checked inductivity of 1 backedges. 0 proven. 1 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2023-01-23 10:11:51,158 INFO  L157   FreeRefinementEngine]: IpTcStrategyModuleZ3 [639634080] provided 0 perfect and 2 imperfect interpolant sequences
+[2023-01-23 10:11:51,159 INFO  L184   FreeRefinementEngine]: Found 0 perfect and 3 imperfect interpolant sequences.
+[2023-01-23 10:11:51,159 INFO  L197   FreeRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [3, 3, 3] total 4
+[2023-01-23 10:11:51,159 INFO  L121   tionRefinementEngine]: Using interpolant automaton builder IpAbStrategyModuleStraightlineAll [1693511973]
+[2023-01-23 10:11:51,160 INFO  L85    oduleStraightlineAll]: Using 3 imperfect interpolants to construct interpolant automaton
+[2023-01-23 10:11:51,167 INFO  L765   eck$LassoCheckResult]: loop already infeasible
+[2023-01-23 10:11:51,167 INFO  L100   FreeRefinementEngine]: Using predicate unifier PredicateUnifier provided by strategy CAMEL
+[2023-01-23 10:11:51,168 INFO  L143   InterpolantAutomaton]: Constructing interpolant automaton starting with 5 interpolants.
+[2023-01-23 10:11:51,175 INFO  L145   InterpolantAutomaton]: CoverageRelationStatistics Valid=10, Invalid=10, Unknown=0, NotChecked=0, Total=20
+[2023-01-23 10:11:51,175 INFO  L87              Difference]: Start difference. First operand 8 states and 9 transitions. cyclomatic complexity: 2 Second operand  has 5 states, 5 states have (on average 1.8) internal successors, (9), 4 states have internal predecessors, (9), 0 states have call successors, (0), 0 states have call predecessors, (0), 0 states have return successors, (0), 0 states have call predecessors, (0), 0 states have call successors, (0)
+[2023-01-23 10:11:51,362 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2023-01-23 10:11:51,365 INFO  L93              Difference]: Finished difference Result 13 states and 14 transitions.
+[2023-01-23 10:11:51,366 INFO  L82        GeneralOperation]: Start removeNonLiveStates. Operand 13 states and 14 transitions.
+[2023-01-23 10:11:51,370 INFO  L131   ngComponentsAnalysis]: Automaton has 1 accepting balls. 9
+[2023-01-23 10:11:51,373 INFO  L88        GeneralOperation]: Finished removeNonLiveStates. Reduced from 13 states to 13 states and 14 transitions.
+[2023-01-23 10:11:51,373 INFO  L87         BuchiClosureNwa]: Accepting states before buchiClosure: 13
+[2023-01-23 10:11:51,374 INFO  L106        BuchiClosureNwa]: Accepting states after buchiClosure: 13
+[2023-01-23 10:11:51,375 INFO  L73         IsDeterministic]: Start isDeterministic. Operand 13 states and 14 transitions.
+[2023-01-23 10:11:51,376 INFO  L80         IsDeterministic]: Finished isDeterministic. Operand is deterministic.
+[2023-01-23 10:11:51,377 INFO  L218   hiAutomatonCegarLoop]: Abstraction has 13 states and 14 transitions.
+[2023-01-23 10:11:51,379 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 13 states and 14 transitions.
+[2023-01-23 10:11:51,383 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 13 to 12.
+[2023-01-23 10:11:51,389 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand  has 12 states, 12 states have (on average 1.0833333333333333) internal successors, (13), 11 states have internal predecessors, (13), 0 states have call successors, (0), 0 states have call predecessors, (0), 0 states have return successors, (0), 0 states have call predecessors, (0), 0 states have call successors, (0)
+[2023-01-23 10:11:51,393 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 12 states to 12 states and 13 transitions.
+[2023-01-23 10:11:51,394 INFO  L240   hiAutomatonCegarLoop]: Abstraction has 12 states and 13 transitions.
+[2023-01-23 10:11:51,406 INFO  L141   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 5 states. 
+[2023-01-23 10:11:51,415 INFO  L428   stractBuchiCegarLoop]: Abstraction has 12 states and 13 transitions.
+[2023-01-23 10:11:51,416 INFO  L335   stractBuchiCegarLoop]: ======== Iteration 3 ============
+[2023-01-23 10:11:51,418 INFO  L72            BuchiIsEmpty]: Start buchiIsEmpty. Operand 12 states and 13 transitions.
+[2023-01-23 10:11:51,426 INFO  L131   ngComponentsAnalysis]: Automaton has 1 accepting balls. 9
+[2023-01-23 10:11:51,426 INFO  L87            BuchiIsEmpty]: Finished buchiIsEmpty Result is false
+[2023-01-23 10:11:51,426 INFO  L119           BuchiIsEmpty]: Starting construction of run
+[2023-01-23 10:11:51,428 INFO  L148   hiAutomatonCegarLoop]: Counterexample stem histogram [1, 1, 1]
+[2023-01-23 10:11:51,430 INFO  L149   hiAutomatonCegarLoop]: Counterexample loop histogram [3, 3, 1, 1, 1]
+[2023-01-23 10:11:51,432 INFO  L748   eck$LassoCheckResult]: Stem: 93#$Ultimate##0 assume { :begin_inline_ULTIMATE.init } true; 94#L-1 assume { :end_inline_ULTIMATE.init } true;assume { :begin_inline_main } true;havoc main_#res#1;havoc main_#t~nondet0#1, main_#t~post2#1, main_#t~post1#1, main_~i~0#1, main_~j~0#1, main_~num~0#1;havoc main_~i~0#1;havoc main_~j~0#1;main_~num~0#1 := main_#t~nondet0#1;havoc main_#t~nondet0#1; 96#L12 assume !(main_~num~0#1 > 65534);main_~i~0#1 := 0; 97#L14-3 
+[2023-01-23 10:11:51,433 INFO  L750   eck$LassoCheckResult]: Loop: 97#L14-3 assume !!(main_~i~0#1 < main_~num~0#1);main_~i~0#1 := 0; 91#L16-3 assume !!(main_~i~0#1 < 3); 92#L16-2 main_#t~post2#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post2#1;havoc main_#t~post2#1; 95#L16-3 assume !!(main_~i~0#1 < 3); 102#L16-2 main_#t~post2#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post2#1;havoc main_#t~post2#1; 101#L16-3 assume !!(main_~i~0#1 < 3); 100#L16-2 main_#t~post2#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post2#1;havoc main_#t~post2#1; 99#L16-3 assume !(main_~i~0#1 < 3); 98#L14-2 main_#t~post1#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post1#1;havoc main_#t~post1#1; 97#L14-3 
+[2023-01-23 10:11:51,434 INFO  L144       PredicateUnifier]: Initialized classic predicate unifier
+[2023-01-23 10:11:51,457 INFO  L85        PathProgramCache]: Analyzing trace with hash 29860, now seen corresponding path program 3 times
+[2023-01-23 10:11:51,458 INFO  L118   FreeRefinementEngine]: Executing refinement strategy CAMEL
+[2023-01-23 10:11:51,459 INFO  L333   FreeRefinementEngine]: Using trace check IpTcStrategyModuleSmtInterpolCraig [1475731031]
+[2023-01-23 10:11:51,460 INFO  L95    rtionOrderModulation]: Keeping assertion order NOT_INCREMENTALLY
+[2023-01-23 10:11:51,479 INFO  L127          SolverBuilder]: Constructing new instance of SMTInterpol with explicit timeout -1 ms and remaining time -1 ms
+[2023-01-23 10:11:51,510 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:11:51,522 INFO  L356             TraceCheck]: Trace is feasible, we will do another trace check, this time with branch encoders.
+[2023-01-23 10:11:51,546 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:11:51,562 INFO  L130   FreeRefinementEngine]: Strategy CAMEL found a feasible trace
+[2023-01-23 10:11:51,567 INFO  L144       PredicateUnifier]: Initialized classic predicate unifier
+[2023-01-23 10:11:51,569 INFO  L85        PathProgramCache]: Analyzing trace with hash 1286429308, now seen corresponding path program 2 times
+[2023-01-23 10:11:51,570 INFO  L118   FreeRefinementEngine]: Executing refinement strategy CAMEL
+[2023-01-23 10:11:51,571 INFO  L333   FreeRefinementEngine]: Using trace check IpTcStrategyModuleSmtInterpolCraig [768534900]
+[2023-01-23 10:11:51,572 INFO  L95    rtionOrderModulation]: Keeping assertion order NOT_INCREMENTALLY
+[2023-01-23 10:11:51,573 INFO  L127          SolverBuilder]: Constructing new instance of SMTInterpol with explicit timeout -1 ms and remaining time -1 ms
+[2023-01-23 10:11:51,717 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:11:51,719 INFO  L356             TraceCheck]: Trace is feasible, we will do another trace check, this time with branch encoders.
+[2023-01-23 10:11:51,754 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:11:51,776 INFO  L130   FreeRefinementEngine]: Strategy CAMEL found a feasible trace
+[2023-01-23 10:11:51,779 INFO  L144       PredicateUnifier]: Initialized classic predicate unifier
+[2023-01-23 10:11:51,781 INFO  L85        PathProgramCache]: Analyzing trace with hash 515009849, now seen corresponding path program 1 times
+[2023-01-23 10:11:51,782 INFO  L118   FreeRefinementEngine]: Executing refinement strategy CAMEL
+[2023-01-23 10:11:51,784 INFO  L333   FreeRefinementEngine]: Using trace check IpTcStrategyModuleSmtInterpolCraig [2026407743]
+[2023-01-23 10:11:51,790 INFO  L95    rtionOrderModulation]: Keeping assertion order NOT_INCREMENTALLY
+[2023-01-23 10:11:51,791 INFO  L127          SolverBuilder]: Constructing new instance of SMTInterpol with explicit timeout -1 ms and remaining time -1 ms
+[2023-01-23 10:11:51,872 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:11:51,884 INFO  L356             TraceCheck]: Trace is feasible, we will do another trace check, this time with branch encoders.
+[2023-01-23 10:11:51,966 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:11:51,970 INFO  L130   FreeRefinementEngine]: Strategy CAMEL found a feasible trace
+[2023-01-23 10:11:52,448 INFO  L210          LassoAnalysis]: Preferences:
+[2023-01-23 10:11:52,450 INFO  L126   ssoRankerPreferences]: Compute integeral hull: false
+[2023-01-23 10:11:52,450 INFO  L127   ssoRankerPreferences]: Enable LassoPartitioneer: true
+[2023-01-23 10:11:52,451 INFO  L128   ssoRankerPreferences]: Term annotations enabled: false
+[2023-01-23 10:11:52,451 INFO  L129   ssoRankerPreferences]: Use exernal solver: true
+[2023-01-23 10:11:52,451 INFO  L130   ssoRankerPreferences]: SMT solver command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:11:52,452 INFO  L131   ssoRankerPreferences]: Dump SMT script to file: false
+[2023-01-23 10:11:52,453 INFO  L132   ssoRankerPreferences]: Path of dumped script: 
+[2023-01-23 10:11:52,454 INFO  L133   ssoRankerPreferences]: Filename of dumped script: Reusing_Same_Loop_Iterator_2_NT.c_Iteration3_Lasso
+[2023-01-23 10:11:52,455 INFO  L134   ssoRankerPreferences]: MapElimAlgo: Frank
+[2023-01-23 10:11:52,456 INFO  L276          LassoAnalysis]: Starting lasso preprocessing...
+[2023-01-23 10:11:52,528 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:11:52,627 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:11:52,646 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:11:52,660 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:11:52,666 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:11:52,676 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:11:52,883 INFO  L294          LassoAnalysis]: Preprocessing complete.
+[2023-01-23 10:11:52,884 INFO  L404          LassoAnalysis]: Checking for nontermination...
+[2023-01-23 10:11:52,888 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:11:52,888 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:11:52,960 INFO  L229       MonitoredProcess]: Starting monitored process 3 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:11:53,062 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (3)] Waiting until timeout for monitored process
+[2023-01-23 10:11:53,086 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 0 Nilpotent components: true
+[2023-01-23 10:11:53,086 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:11:53,203 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (3)] Forceful destruction successful, exit code 0
+[2023-01-23 10:11:53,204 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:11:53,205 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:11:53,213 INFO  L229       MonitoredProcess]: Starting monitored process 4 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:11:53,283 INFO  L148   nArgumentSynthesizer]: Nontermination analysis: NONLINEAR Allow bounded executions: true Number of generalized eigenvectors: 3 Nilpotent components: true
+[2023-01-23 10:11:53,283 INFO  L160   nArgumentSynthesizer]: Using integer mode.
+[2023-01-23 10:11:53,299 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (4)] Waiting until timeout for monitored process
+[2023-01-23 10:12:05,985 INFO  L442          LassoAnalysis]: Proving nontermination failed: SMT Solver returned 'unknown'.
+[2023-01-23 10:12:06,039 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (4)] Ended with exit code 0
+[2023-01-23 10:12:06,041 INFO  L210          LassoAnalysis]: Preferences:
+[2023-01-23 10:12:06,041 INFO  L126   ssoRankerPreferences]: Compute integeral hull: false
+[2023-01-23 10:12:06,041 INFO  L127   ssoRankerPreferences]: Enable LassoPartitioneer: true
+[2023-01-23 10:12:06,041 INFO  L128   ssoRankerPreferences]: Term annotations enabled: false
+[2023-01-23 10:12:06,041 INFO  L129   ssoRankerPreferences]: Use exernal solver: false
+[2023-01-23 10:12:06,041 INFO  L130   ssoRankerPreferences]: SMT solver command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:06,043 INFO  L131   ssoRankerPreferences]: Dump SMT script to file: false
+[2023-01-23 10:12:06,043 INFO  L132   ssoRankerPreferences]: Path of dumped script: 
+[2023-01-23 10:12:06,043 INFO  L133   ssoRankerPreferences]: Filename of dumped script: Reusing_Same_Loop_Iterator_2_NT.c_Iteration3_Lasso
+[2023-01-23 10:12:06,044 INFO  L134   ssoRankerPreferences]: MapElimAlgo: Frank
+[2023-01-23 10:12:06,044 INFO  L276          LassoAnalysis]: Starting lasso preprocessing...
+[2023-01-23 10:12:06,048 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:12:06,064 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:12:06,074 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:12:06,084 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:12:06,119 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:12:06,131 INFO  L117          MapEliminator]: Using MapEliminator with SimplificationTechnique=SIMPLIFY_DDA XnfConversionTechnique=BOTTOM_UP_WITH_LOCAL_SIMPLIFICATION AddInequalities=false OnlyTrivialImplicationsArrayWrite=true OnlyTrivialImplicationsForModifiedArguments=true OnlyArgumentsInFormula=true
+[2023-01-23 10:12:06,267 INFO  L294          LassoAnalysis]: Preprocessing complete.
+[2023-01-23 10:12:06,279 INFO  L490          LassoAnalysis]: Using template 'affine'.
+[2023-01-23 10:12:06,285 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:06,292 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:06,320 INFO  L229       MonitoredProcess]: Starting monitored process 5 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:06,386 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:06,386 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (5)] Waiting until timeout for monitored process
+[2023-01-23 10:12:06,430 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:06,430 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:06,431 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:06,432 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:06,432 INFO  L205   nArgumentSynthesizer]: 2 template conjuncts.
+[2023-01-23 10:12:06,446 INFO  L401   nArgumentSynthesizer]: We have 2 Motzkin's Theorem applications.
+[2023-01-23 10:12:06,446 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:06,466 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:06,474 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (5)] Ended with exit code 0
+[2023-01-23 10:12:06,475 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:06,475 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:06,483 INFO  L229       MonitoredProcess]: Starting monitored process 6 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:06,539 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:06,553 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (6)] Waiting until timeout for monitored process
+[2023-01-23 10:12:06,573 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:06,573 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:06,573 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:06,573 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:06,574 INFO  L205   nArgumentSynthesizer]: 2 template conjuncts.
+[2023-01-23 10:12:06,575 INFO  L401   nArgumentSynthesizer]: We have 2 Motzkin's Theorem applications.
+[2023-01-23 10:12:06,575 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:06,587 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:06,593 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (6)] Ended with exit code 0
+[2023-01-23 10:12:06,594 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:06,594 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:06,605 INFO  L229       MonitoredProcess]: Starting monitored process 7 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:06,660 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (7)] Waiting until timeout for monitored process
+[2023-01-23 10:12:06,662 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:06,707 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:06,707 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:06,707 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:06,707 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:06,708 INFO  L205   nArgumentSynthesizer]: 2 template conjuncts.
+[2023-01-23 10:12:06,709 INFO  L401   nArgumentSynthesizer]: We have 2 Motzkin's Theorem applications.
+[2023-01-23 10:12:06,709 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:06,724 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:06,734 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (7)] Forceful destruction successful, exit code 0
+[2023-01-23 10:12:06,735 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:06,736 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:06,758 INFO  L229       MonitoredProcess]: Starting monitored process 8 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:06,812 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:06,827 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (8)] Waiting until timeout for monitored process
+[2023-01-23 10:12:06,850 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:06,851 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:06,851 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:06,851 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:06,851 INFO  L205   nArgumentSynthesizer]: 2 template conjuncts.
+[2023-01-23 10:12:06,853 INFO  L401   nArgumentSynthesizer]: We have 2 Motzkin's Theorem applications.
+[2023-01-23 10:12:06,853 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:06,897 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:06,906 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (8)] Ended with exit code 0
+[2023-01-23 10:12:06,907 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:06,907 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:06,929 INFO  L229       MonitoredProcess]: Starting monitored process 9 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:06,996 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:07,009 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (9)] Waiting until timeout for monitored process
+[2023-01-23 10:12:07,030 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:07,030 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:07,030 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:07,031 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:07,031 INFO  L205   nArgumentSynthesizer]: 2 template conjuncts.
+[2023-01-23 10:12:07,032 INFO  L401   nArgumentSynthesizer]: We have 2 Motzkin's Theorem applications.
+[2023-01-23 10:12:07,032 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:07,074 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:07,080 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (9)] Ended with exit code 0
+[2023-01-23 10:12:07,081 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:07,081 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:07,091 INFO  L229       MonitoredProcess]: Starting monitored process 10 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:07,162 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:07,176 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (10)] Waiting until timeout for monitored process
+[2023-01-23 10:12:07,191 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:07,192 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:07,192 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:07,192 INFO  L205   nArgumentSynthesizer]: 2 template conjuncts.
+[2023-01-23 10:12:07,201 INFO  L401   nArgumentSynthesizer]: We have 6 Motzkin's Theorem applications.
+[2023-01-23 10:12:07,201 INFO  L402   nArgumentSynthesizer]: A total of 2 supporting invariants were added.
+[2023-01-23 10:12:07,237 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:07,244 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (10)] Forceful destruction successful, exit code 0
+[2023-01-23 10:12:07,247 INFO  L490          LassoAnalysis]: Using template '2-nested'.
+[2023-01-23 10:12:07,248 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:07,248 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:07,261 INFO  L229       MonitoredProcess]: Starting monitored process 11 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:07,342 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:07,355 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (11)] Waiting until timeout for monitored process
+[2023-01-23 10:12:07,380 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:07,383 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:07,383 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:07,384 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:07,384 INFO  L205   nArgumentSynthesizer]: 3 template conjuncts.
+[2023-01-23 10:12:07,387 INFO  L401   nArgumentSynthesizer]: We have 3 Motzkin's Theorem applications.
+[2023-01-23 10:12:07,387 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:07,405 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:07,417 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (11)] Ended with exit code 0
+[2023-01-23 10:12:07,419 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:07,420 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:07,450 INFO  L229       MonitoredProcess]: Starting monitored process 12 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:07,527 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (12)] Waiting until timeout for monitored process
+[2023-01-23 10:12:07,528 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:07,581 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:07,582 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:07,582 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:07,582 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:07,582 INFO  L205   nArgumentSynthesizer]: 3 template conjuncts.
+[2023-01-23 10:12:07,587 INFO  L401   nArgumentSynthesizer]: We have 3 Motzkin's Theorem applications.
+[2023-01-23 10:12:07,587 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:07,651 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:07,662 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (12)] Forceful destruction successful, exit code 0
+[2023-01-23 10:12:07,662 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:07,663 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:07,685 INFO  L229       MonitoredProcess]: Starting monitored process 13 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:07,730 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:07,746 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (13)] Waiting until timeout for monitored process
+[2023-01-23 10:12:07,771 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:07,771 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:07,772 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:07,772 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:07,772 INFO  L205   nArgumentSynthesizer]: 3 template conjuncts.
+[2023-01-23 10:12:07,774 INFO  L401   nArgumentSynthesizer]: We have 3 Motzkin's Theorem applications.
+[2023-01-23 10:12:07,774 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:07,789 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:07,796 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (13)] Ended with exit code 0
+[2023-01-23 10:12:07,797 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:07,799 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:07,804 INFO  L229       MonitoredProcess]: Starting monitored process 14 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:07,823 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:07,834 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (14)] Waiting until timeout for monitored process
+[2023-01-23 10:12:07,850 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:07,850 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:07,851 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:07,851 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:07,851 INFO  L205   nArgumentSynthesizer]: 3 template conjuncts.
+[2023-01-23 10:12:07,852 INFO  L401   nArgumentSynthesizer]: We have 3 Motzkin's Theorem applications.
+[2023-01-23 10:12:07,853 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:07,860 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:07,867 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (14)] Ended with exit code 0
+[2023-01-23 10:12:07,867 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:07,868 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:07,871 INFO  L229       MonitoredProcess]: Starting monitored process 15 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:07,935 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:07,942 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (15)] Waiting until timeout for monitored process
+[2023-01-23 10:12:07,984 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:07,984 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:07,984 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:07,985 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:07,985 INFO  L205   nArgumentSynthesizer]: 3 template conjuncts.
+[2023-01-23 10:12:07,987 INFO  L401   nArgumentSynthesizer]: We have 3 Motzkin's Theorem applications.
+[2023-01-23 10:12:07,988 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:08,019 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:08,050 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (15)] Ended with exit code 0
+[2023-01-23 10:12:08,051 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:08,051 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:08,060 INFO  L229       MonitoredProcess]: Starting monitored process 16 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:08,142 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (16)] Waiting until timeout for monitored process
+[2023-01-23 10:12:08,144 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:08,197 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:08,197 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:08,198 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:08,198 INFO  L205   nArgumentSynthesizer]: 3 template conjuncts.
+[2023-01-23 10:12:08,232 INFO  L401   nArgumentSynthesizer]: We have 9 Motzkin's Theorem applications.
+[2023-01-23 10:12:08,232 INFO  L402   nArgumentSynthesizer]: A total of 3 supporting invariants were added.
+[2023-01-23 10:12:08,262 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:08,269 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (16)] Ended with exit code 0
+[2023-01-23 10:12:08,271 INFO  L490          LassoAnalysis]: Using template '3-nested'.
+[2023-01-23 10:12:08,271 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:08,272 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:08,274 INFO  L229       MonitoredProcess]: Starting monitored process 17 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:08,286 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:08,299 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (17)] Waiting until timeout for monitored process
+[2023-01-23 10:12:08,307 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:08,307 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:08,307 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:08,308 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:08,308 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:08,310 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:08,310 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:08,352 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:08,358 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (17)] Ended with exit code 0
+[2023-01-23 10:12:08,359 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:08,359 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:08,362 INFO  L229       MonitoredProcess]: Starting monitored process 18 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:08,404 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:08,409 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (18)] Waiting until timeout for monitored process
+[2023-01-23 10:12:08,437 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:08,437 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:08,438 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:08,438 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:08,438 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:08,440 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:08,440 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:08,468 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:08,475 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (18)] Ended with exit code 0
+[2023-01-23 10:12:08,475 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:08,476 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:08,482 INFO  L229       MonitoredProcess]: Starting monitored process 19 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:08,515 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (19)] Waiting until timeout for monitored process
+[2023-01-23 10:12:08,515 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:08,552 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:08,552 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:08,552 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:08,552 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:08,553 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:08,554 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:08,554 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:08,584 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:08,591 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (19)] Ended with exit code 0
+[2023-01-23 10:12:08,591 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:08,592 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:08,603 INFO  L229       MonitoredProcess]: Starting monitored process 20 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:08,702 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:08,703 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (20)] Waiting until timeout for monitored process
+[2023-01-23 10:12:08,732 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:08,733 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:08,733 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:08,733 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:08,733 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:08,743 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:08,743 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:08,761 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:08,768 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (20)] Forceful destruction successful, exit code 0
+[2023-01-23 10:12:08,768 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:08,769 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:08,781 INFO  L229       MonitoredProcess]: Starting monitored process 21 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:08,823 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (21)] Waiting until timeout for monitored process
+[2023-01-23 10:12:08,824 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:08,849 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:08,849 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:08,849 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:08,850 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:08,850 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:08,851 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:08,851 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:08,875 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:08,882 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (21)] Ended with exit code 0
+[2023-01-23 10:12:08,883 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:08,883 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:08,899 INFO  L229       MonitoredProcess]: Starting monitored process 22 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:08,956 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:08,987 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (22)] Waiting until timeout for monitored process
+[2023-01-23 10:12:09,002 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:09,004 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:09,004 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:09,005 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:09,027 INFO  L401   nArgumentSynthesizer]: We have 12 Motzkin's Theorem applications.
+[2023-01-23 10:12:09,028 INFO  L402   nArgumentSynthesizer]: A total of 4 supporting invariants were added.
+[2023-01-23 10:12:09,084 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:09,092 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (22)] Ended with exit code 0
+[2023-01-23 10:12:09,092 INFO  L490          LassoAnalysis]: Using template '4-nested'.
+[2023-01-23 10:12:09,093 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:09,093 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:09,113 INFO  L229       MonitoredProcess]: Starting monitored process 23 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:09,228 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (23)] Waiting until timeout for monitored process
+[2023-01-23 10:12:09,228 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:09,260 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:09,260 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:09,260 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:09,260 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:09,260 INFO  L205   nArgumentSynthesizer]: 5 template conjuncts.
+[2023-01-23 10:12:09,262 INFO  L401   nArgumentSynthesizer]: We have 5 Motzkin's Theorem applications.
+[2023-01-23 10:12:09,263 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:09,281 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:09,291 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (23)] Ended with exit code 0
+[2023-01-23 10:12:09,291 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:09,292 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:09,336 INFO  L229       MonitoredProcess]: Starting monitored process 24 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:09,390 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (24)] Waiting until timeout for monitored process
+[2023-01-23 10:12:09,390 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:09,410 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:09,410 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:09,410 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:09,410 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:09,410 INFO  L205   nArgumentSynthesizer]: 5 template conjuncts.
+[2023-01-23 10:12:09,412 INFO  L401   nArgumentSynthesizer]: We have 5 Motzkin's Theorem applications.
+[2023-01-23 10:12:09,412 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:09,424 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:09,438 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (24)] Forceful destruction successful, exit code 0
+[2023-01-23 10:12:09,439 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:09,439 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:09,468 INFO  L229       MonitoredProcess]: Starting monitored process 25 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:09,552 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:09,590 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (25)] Waiting until timeout for monitored process
+[2023-01-23 10:12:09,602 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:09,602 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:09,602 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:09,602 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:09,602 INFO  L205   nArgumentSynthesizer]: 5 template conjuncts.
+[2023-01-23 10:12:09,604 INFO  L401   nArgumentSynthesizer]: We have 5 Motzkin's Theorem applications.
+[2023-01-23 10:12:09,604 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:09,636 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:09,642 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (25)] Ended with exit code 0
+[2023-01-23 10:12:09,643 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:09,643 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:09,675 INFO  L229       MonitoredProcess]: Starting monitored process 26 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:09,754 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (26)] Waiting until timeout for monitored process
+[2023-01-23 10:12:09,755 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:09,774 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:09,775 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:09,775 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:09,775 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:09,781 INFO  L205   nArgumentSynthesizer]: 5 template conjuncts.
+[2023-01-23 10:12:09,785 INFO  L401   nArgumentSynthesizer]: We have 5 Motzkin's Theorem applications.
+[2023-01-23 10:12:09,785 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:09,844 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:09,858 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (26)] Ended with exit code 0
+[2023-01-23 10:12:09,860 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:09,860 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:09,877 INFO  L229       MonitoredProcess]: Starting monitored process 27 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:09,885 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:09,891 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (27)] Waiting until timeout for monitored process
+[2023-01-23 10:12:09,905 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:09,905 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:09,906 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:09,906 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:09,906 INFO  L205   nArgumentSynthesizer]: 5 template conjuncts.
+[2023-01-23 10:12:09,908 INFO  L401   nArgumentSynthesizer]: We have 5 Motzkin's Theorem applications.
+[2023-01-23 10:12:09,908 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:09,972 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:10,002 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (27)] Ended with exit code 0
+[2023-01-23 10:12:10,003 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:10,003 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:10,032 INFO  L229       MonitoredProcess]: Starting monitored process 28 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:10,113 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:10,115 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (28)] Waiting until timeout for monitored process
+[2023-01-23 10:12:10,140 INFO  L338   nArgumentSynthesizer]: Template has degree 0.
+[2023-01-23 10:12:10,141 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:10,141 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:10,141 INFO  L205   nArgumentSynthesizer]: 5 template conjuncts.
+[2023-01-23 10:12:10,166 INFO  L401   nArgumentSynthesizer]: We have 15 Motzkin's Theorem applications.
+[2023-01-23 10:12:10,166 INFO  L402   nArgumentSynthesizer]: A total of 5 supporting invariants were added.
+[2023-01-23 10:12:10,262 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:10,270 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (28)] Ended with exit code 0
+[2023-01-23 10:12:10,271 INFO  L490          LassoAnalysis]: Using template '2-phase'.
+[2023-01-23 10:12:10,271 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:10,271 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:10,280 INFO  L229       MonitoredProcess]: Starting monitored process 29 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:10,354 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:10,373 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (29)] Waiting until timeout for monitored process
+[2023-01-23 10:12:10,383 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:10,384 INFO  L338   nArgumentSynthesizer]: Template has degree 1.
+[2023-01-23 10:12:10,384 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:10,384 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:10,384 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:10,384 INFO  L205   nArgumentSynthesizer]: 3 template conjuncts.
+[2023-01-23 10:12:10,390 INFO  L401   nArgumentSynthesizer]: We have 3 Motzkin's Theorem applications.
+[2023-01-23 10:12:10,390 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:10,424 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:10,430 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (29)] Ended with exit code 0
+[2023-01-23 10:12:10,431 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:10,432 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:10,439 INFO  L229       MonitoredProcess]: Starting monitored process 30 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:10,441 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (30)] Waiting until timeout for monitored process
+[2023-01-23 10:12:10,442 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:10,474 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:10,475 INFO  L338   nArgumentSynthesizer]: Template has degree 1.
+[2023-01-23 10:12:10,475 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:10,475 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:10,475 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:10,475 INFO  L205   nArgumentSynthesizer]: 3 template conjuncts.
+[2023-01-23 10:12:10,477 INFO  L401   nArgumentSynthesizer]: We have 3 Motzkin's Theorem applications.
+[2023-01-23 10:12:10,477 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:10,523 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:10,530 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (30)] Ended with exit code 0
+[2023-01-23 10:12:10,531 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:10,532 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:10,543 INFO  L229       MonitoredProcess]: Starting monitored process 31 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:10,656 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (31)] Waiting until timeout for monitored process
+[2023-01-23 10:12:10,657 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:10,676 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:10,676 INFO  L338   nArgumentSynthesizer]: Template has degree 1.
+[2023-01-23 10:12:10,676 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:10,676 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:10,676 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:10,677 INFO  L205   nArgumentSynthesizer]: 3 template conjuncts.
+[2023-01-23 10:12:10,692 INFO  L401   nArgumentSynthesizer]: We have 3 Motzkin's Theorem applications.
+[2023-01-23 10:12:10,692 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:10,726 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:10,743 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (31)] Ended with exit code 0
+[2023-01-23 10:12:10,744 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:10,744 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:10,766 INFO  L229       MonitoredProcess]: Starting monitored process 32 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:10,802 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (32)] Waiting until timeout for monitored process
+[2023-01-23 10:12:10,803 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:10,847 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:10,848 INFO  L338   nArgumentSynthesizer]: Template has degree 1.
+[2023-01-23 10:12:10,848 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:10,849 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:10,849 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:10,849 INFO  L205   nArgumentSynthesizer]: 3 template conjuncts.
+[2023-01-23 10:12:10,851 INFO  L401   nArgumentSynthesizer]: We have 3 Motzkin's Theorem applications.
+[2023-01-23 10:12:10,851 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:10,893 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:10,900 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (32)] Ended with exit code 0
+[2023-01-23 10:12:10,901 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:10,901 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:10,929 INFO  L229       MonitoredProcess]: Starting monitored process 33 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:10,993 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:11,004 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (33)] Waiting until timeout for monitored process
+[2023-01-23 10:12:11,065 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:11,065 INFO  L338   nArgumentSynthesizer]: Template has degree 1.
+[2023-01-23 10:12:11,066 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:11,066 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:11,066 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:11,066 INFO  L205   nArgumentSynthesizer]: 3 template conjuncts.
+[2023-01-23 10:12:11,077 INFO  L401   nArgumentSynthesizer]: We have 3 Motzkin's Theorem applications.
+[2023-01-23 10:12:11,078 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:11,104 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:11,113 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (33)] Ended with exit code 0
+[2023-01-23 10:12:11,114 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:11,114 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:11,127 INFO  L229       MonitoredProcess]: Starting monitored process 34 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:11,176 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:11,220 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (34)] Waiting until timeout for monitored process
+[2023-01-23 10:12:11,259 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:11,259 INFO  L338   nArgumentSynthesizer]: Template has degree 1.
+[2023-01-23 10:12:11,260 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:11,260 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:11,260 INFO  L205   nArgumentSynthesizer]: 3 template conjuncts.
+[2023-01-23 10:12:11,276 INFO  L401   nArgumentSynthesizer]: We have 9 Motzkin's Theorem applications.
+[2023-01-23 10:12:11,276 INFO  L402   nArgumentSynthesizer]: A total of 3 supporting invariants were added.
+[2023-01-23 10:12:11,309 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:11,317 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (34)] Ended with exit code 0
+[2023-01-23 10:12:11,318 INFO  L490          LassoAnalysis]: Using template '3-phase'.
+[2023-01-23 10:12:11,319 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:11,319 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:11,367 INFO  L229       MonitoredProcess]: Starting monitored process 35 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:11,405 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (35)] Waiting until timeout for monitored process
+[2023-01-23 10:12:11,407 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:11,461 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:11,462 INFO  L338   nArgumentSynthesizer]: Template has degree 2.
+[2023-01-23 10:12:11,462 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:11,462 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:11,462 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:11,463 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:11,465 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:11,466 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:11,510 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:11,525 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (35)] Forceful destruction successful, exit code 0
+[2023-01-23 10:12:11,526 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:11,526 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:11,537 INFO  L229       MonitoredProcess]: Starting monitored process 36 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:11,610 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:11,639 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (36)] Waiting until timeout for monitored process
+[2023-01-23 10:12:11,650 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:11,650 INFO  L338   nArgumentSynthesizer]: Template has degree 2.
+[2023-01-23 10:12:11,651 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:11,652 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:11,653 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:11,653 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:11,714 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:11,715 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:11,732 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:11,739 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (36)] Ended with exit code 0
+[2023-01-23 10:12:11,750 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:11,751 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:11,774 INFO  L229       MonitoredProcess]: Starting monitored process 37 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:11,780 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:11,789 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (37)] Waiting until timeout for monitored process
+[2023-01-23 10:12:11,800 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:11,800 INFO  L338   nArgumentSynthesizer]: Template has degree 2.
+[2023-01-23 10:12:11,800 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:11,801 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:11,801 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:11,801 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:11,803 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:11,803 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:11,817 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:11,913 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (37)] Ended with exit code 0
+[2023-01-23 10:12:11,913 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:11,913 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:11,917 INFO  L229       MonitoredProcess]: Starting monitored process 38 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:11,955 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (38)] Waiting until timeout for monitored process
+[2023-01-23 10:12:11,959 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:11,992 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:11,992 INFO  L338   nArgumentSynthesizer]: Template has degree 2.
+[2023-01-23 10:12:11,992 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:11,993 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:11,993 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:11,993 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:11,995 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:11,996 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:12,041 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:12,047 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (38)] Ended with exit code 0
+[2023-01-23 10:12:12,048 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:12,049 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:12,061 INFO  L229       MonitoredProcess]: Starting monitored process 39 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:12,126 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (39)] Waiting until timeout for monitored process
+[2023-01-23 10:12:12,126 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:12,163 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:12,164 INFO  L338   nArgumentSynthesizer]: Template has degree 2.
+[2023-01-23 10:12:12,164 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:12,164 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:12,164 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:12,164 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:12,166 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:12,167 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:12,183 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:12,191 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (39)] Ended with exit code 0
+[2023-01-23 10:12:12,191 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:12,191 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:12,213 INFO  L229       MonitoredProcess]: Starting monitored process 40 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:12,272 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:12,273 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (40)] Waiting until timeout for monitored process
+[2023-01-23 10:12:12,303 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:12,303 INFO  L338   nArgumentSynthesizer]: Template has degree 2.
+[2023-01-23 10:12:12,304 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:12,304 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:12,304 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:12,332 INFO  L401   nArgumentSynthesizer]: We have 12 Motzkin's Theorem applications.
+[2023-01-23 10:12:12,333 INFO  L402   nArgumentSynthesizer]: A total of 4 supporting invariants were added.
+[2023-01-23 10:12:12,391 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:12,398 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (40)] Ended with exit code 0
+[2023-01-23 10:12:12,400 INFO  L490          LassoAnalysis]: Using template '4-phase'.
+[2023-01-23 10:12:12,400 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:12,400 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:12,406 INFO  L229       MonitoredProcess]: Starting monitored process 41 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:12,438 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (41)] Waiting until timeout for monitored process
+[2023-01-23 10:12:12,439 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:12,475 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:12,476 INFO  L338   nArgumentSynthesizer]: Template has degree 3.
+[2023-01-23 10:12:12,476 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:12,476 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:12,477 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:12,477 INFO  L205   nArgumentSynthesizer]: 5 template conjuncts.
+[2023-01-23 10:12:12,480 INFO  L401   nArgumentSynthesizer]: We have 5 Motzkin's Theorem applications.
+[2023-01-23 10:12:12,482 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:12,506 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:12,514 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (41)] Ended with exit code 0
+[2023-01-23 10:12:12,515 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:12,515 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:12,519 INFO  L229       MonitoredProcess]: Starting monitored process 42 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:12,599 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (42)] Waiting until timeout for monitored process
+[2023-01-23 10:12:12,600 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:12,667 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:12,667 INFO  L338   nArgumentSynthesizer]: Template has degree 3.
+[2023-01-23 10:12:12,668 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:12,668 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:12,668 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:12,668 INFO  L205   nArgumentSynthesizer]: 5 template conjuncts.
+[2023-01-23 10:12:12,672 INFO  L401   nArgumentSynthesizer]: We have 5 Motzkin's Theorem applications.
+[2023-01-23 10:12:12,673 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:12,683 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:12,689 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (42)] Ended with exit code 0
+[2023-01-23 10:12:12,692 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:12,692 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:12,789 INFO  L229       MonitoredProcess]: Starting monitored process 43 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:12,832 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (43)] Waiting until timeout for monitored process
+[2023-01-23 10:12:12,833 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:12,945 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:12,945 INFO  L338   nArgumentSynthesizer]: Template has degree 3.
+[2023-01-23 10:12:12,945 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:12,945 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:12,946 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:12,946 INFO  L205   nArgumentSynthesizer]: 5 template conjuncts.
+[2023-01-23 10:12:12,949 INFO  L401   nArgumentSynthesizer]: We have 5 Motzkin's Theorem applications.
+[2023-01-23 10:12:12,949 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:12,970 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:12,979 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (43)] Forceful destruction successful, exit code 0
+[2023-01-23 10:12:12,981 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:12,981 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:12,998 INFO  L229       MonitoredProcess]: Starting monitored process 44 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:13,050 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:13,070 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (44)] Waiting until timeout for monitored process
+[2023-01-23 10:12:13,072 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:13,072 INFO  L338   nArgumentSynthesizer]: Template has degree 3.
+[2023-01-23 10:12:13,072 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:13,073 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:13,073 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:13,073 INFO  L205   nArgumentSynthesizer]: 5 template conjuncts.
+[2023-01-23 10:12:13,087 INFO  L401   nArgumentSynthesizer]: We have 5 Motzkin's Theorem applications.
+[2023-01-23 10:12:13,087 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:13,116 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:13,124 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (44)] Forceful destruction successful, exit code 0
+[2023-01-23 10:12:13,125 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:13,125 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:13,133 INFO  L229       MonitoredProcess]: Starting monitored process 45 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:13,203 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (45)] Waiting until timeout for monitored process
+[2023-01-23 10:12:13,204 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:13,228 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:13,228 INFO  L338   nArgumentSynthesizer]: Template has degree 3.
+[2023-01-23 10:12:13,229 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:13,229 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:13,229 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:13,229 INFO  L205   nArgumentSynthesizer]: 5 template conjuncts.
+[2023-01-23 10:12:13,232 INFO  L401   nArgumentSynthesizer]: We have 5 Motzkin's Theorem applications.
+[2023-01-23 10:12:13,232 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:13,286 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:13,295 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (45)] Ended with exit code 0
+[2023-01-23 10:12:13,296 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:13,296 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:13,304 INFO  L229       MonitoredProcess]: Starting monitored process 46 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:13,346 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (46)] Waiting until timeout for monitored process
+[2023-01-23 10:12:13,347 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:13,384 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:13,384 INFO  L338   nArgumentSynthesizer]: Template has degree 3.
+[2023-01-23 10:12:13,385 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:13,385 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:13,385 INFO  L205   nArgumentSynthesizer]: 5 template conjuncts.
+[2023-01-23 10:12:13,395 INFO  L401   nArgumentSynthesizer]: We have 15 Motzkin's Theorem applications.
+[2023-01-23 10:12:13,396 INFO  L402   nArgumentSynthesizer]: A total of 5 supporting invariants were added.
+[2023-01-23 10:12:13,483 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:13,495 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (46)] Forceful destruction successful, exit code 0
+[2023-01-23 10:12:13,496 INFO  L490          LassoAnalysis]: Using template '2-lex'.
+[2023-01-23 10:12:13,496 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:13,496 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:13,520 INFO  L229       MonitoredProcess]: Starting monitored process 47 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:13,565 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (47)] Waiting until timeout for monitored process
+[2023-01-23 10:12:13,566 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:13,621 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:13,621 INFO  L338   nArgumentSynthesizer]: Template has degree 1.
+[2023-01-23 10:12:13,621 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:13,622 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:13,622 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:13,622 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:13,623 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:13,623 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:13,650 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:13,663 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (47)] Ended with exit code 0
+[2023-01-23 10:12:13,664 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:13,664 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:13,705 INFO  L229       MonitoredProcess]: Starting monitored process 48 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:13,716 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:13,736 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (48)] Waiting until timeout for monitored process
+[2023-01-23 10:12:13,736 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:13,737 INFO  L338   nArgumentSynthesizer]: Template has degree 1.
+[2023-01-23 10:12:13,737 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:13,737 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:13,737 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:13,737 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:13,739 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:13,739 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:13,773 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:13,780 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (48)] Ended with exit code 0
+[2023-01-23 10:12:13,780 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:13,781 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:13,790 INFO  L229       MonitoredProcess]: Starting monitored process 49 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:13,848 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:13,865 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (49)] Waiting until timeout for monitored process
+[2023-01-23 10:12:13,868 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:13,868 INFO  L338   nArgumentSynthesizer]: Template has degree 1.
+[2023-01-23 10:12:13,868 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:13,869 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:13,869 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:13,869 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:13,870 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:13,871 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:13,900 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:13,906 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (49)] Forceful destruction successful, exit code 0
+[2023-01-23 10:12:13,906 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:13,907 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:13,912 INFO  L229       MonitoredProcess]: Starting monitored process 50 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:13,938 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:13,958 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (50)] Waiting until timeout for monitored process
+[2023-01-23 10:12:13,977 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:13,977 INFO  L338   nArgumentSynthesizer]: Template has degree 1.
+[2023-01-23 10:12:13,978 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:13,978 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:13,978 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:13,978 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:13,979 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:13,979 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:14,006 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:14,020 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (50)] Ended with exit code 0
+[2023-01-23 10:12:14,021 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:14,022 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:14,032 INFO  L229       MonitoredProcess]: Starting monitored process 51 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:14,072 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:14,092 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (51)] Waiting until timeout for monitored process
+[2023-01-23 10:12:14,105 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:14,105 INFO  L338   nArgumentSynthesizer]: Template has degree 1.
+[2023-01-23 10:12:14,105 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:14,106 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:14,106 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:14,106 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:14,111 INFO  L401   nArgumentSynthesizer]: We have 4 Motzkin's Theorem applications.
+[2023-01-23 10:12:14,112 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:14,145 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:14,151 INFO  L540       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (51)] Forceful destruction successful, exit code 0
+[2023-01-23 10:12:14,152 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:14,152 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:14,167 INFO  L229       MonitoredProcess]: Starting monitored process 52 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:14,216 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (52)] Waiting until timeout for monitored process
+[2023-01-23 10:12:14,216 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:14,243 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:14,244 INFO  L338   nArgumentSynthesizer]: Template has degree 1.
+[2023-01-23 10:12:14,244 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:14,244 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:14,244 INFO  L205   nArgumentSynthesizer]: 4 template conjuncts.
+[2023-01-23 10:12:14,259 INFO  L401   nArgumentSynthesizer]: We have 12 Motzkin's Theorem applications.
+[2023-01-23 10:12:14,259 INFO  L402   nArgumentSynthesizer]: A total of 4 supporting invariants were added.
+[2023-01-23 10:12:14,312 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:14,330 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (52)] Ended with exit code 0
+[2023-01-23 10:12:14,331 INFO  L490          LassoAnalysis]: Using template '3-lex'.
+[2023-01-23 10:12:14,331 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:14,331 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:14,346 INFO  L229       MonitoredProcess]: Starting monitored process 53 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:14,448 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (53)] Waiting until timeout for monitored process
+[2023-01-23 10:12:14,449 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:14,504 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:14,504 INFO  L338   nArgumentSynthesizer]: Template has degree 3.
+[2023-01-23 10:12:14,504 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:14,504 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:14,504 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:14,505 INFO  L205   nArgumentSynthesizer]: 6 template conjuncts.
+[2023-01-23 10:12:14,508 INFO  L401   nArgumentSynthesizer]: We have 6 Motzkin's Theorem applications.
+[2023-01-23 10:12:14,508 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:14,533 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:14,541 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (53)] Ended with exit code 0
+[2023-01-23 10:12:14,542 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:14,543 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:14,580 INFO  L229       MonitoredProcess]: Starting monitored process 54 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:14,692 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:14,707 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (54)] Waiting until timeout for monitored process
+[2023-01-23 10:12:14,742 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:14,743 INFO  L338   nArgumentSynthesizer]: Template has degree 3.
+[2023-01-23 10:12:14,743 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:14,743 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:14,743 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:14,743 INFO  L205   nArgumentSynthesizer]: 6 template conjuncts.
+[2023-01-23 10:12:14,748 INFO  L401   nArgumentSynthesizer]: We have 6 Motzkin's Theorem applications.
+[2023-01-23 10:12:14,748 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:14,797 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:14,804 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (54)] Ended with exit code 0
+[2023-01-23 10:12:14,805 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:14,805 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:14,818 INFO  L229       MonitoredProcess]: Starting monitored process 55 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:14,854 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:14,866 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (55)] Waiting until timeout for monitored process
+[2023-01-23 10:12:14,942 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:14,943 INFO  L338   nArgumentSynthesizer]: Template has degree 3.
+[2023-01-23 10:12:14,943 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:14,943 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:14,943 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:14,943 INFO  L205   nArgumentSynthesizer]: 6 template conjuncts.
+[2023-01-23 10:12:14,945 INFO  L401   nArgumentSynthesizer]: We have 6 Motzkin's Theorem applications.
+[2023-01-23 10:12:14,946 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:14,965 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:14,975 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (55)] Ended with exit code 0
+[2023-01-23 10:12:14,976 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:14,976 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:14,991 INFO  L229       MonitoredProcess]: Starting monitored process 56 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:15,065 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:15,080 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (56)] Waiting until timeout for monitored process
+[2023-01-23 10:12:15,137 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:15,137 INFO  L338   nArgumentSynthesizer]: Template has degree 3.
+[2023-01-23 10:12:15,138 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:15,138 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:15,138 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:15,138 INFO  L205   nArgumentSynthesizer]: 6 template conjuncts.
+[2023-01-23 10:12:15,143 INFO  L401   nArgumentSynthesizer]: We have 6 Motzkin's Theorem applications.
+[2023-01-23 10:12:15,144 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:15,173 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:15,186 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (56)] Ended with exit code 0
+[2023-01-23 10:12:15,187 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:15,187 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:15,211 INFO  L229       MonitoredProcess]: Starting monitored process 57 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:15,369 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (57)] Waiting until timeout for monitored process
+[2023-01-23 10:12:15,372 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:15,397 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:15,398 INFO  L338   nArgumentSynthesizer]: Template has degree 3.
+[2023-01-23 10:12:15,398 INFO  L351   nArgumentSynthesizer]: There is no stem transition; disabling supporting invariant generation.
+[2023-01-23 10:12:15,398 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:15,398 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:15,398 INFO  L205   nArgumentSynthesizer]: 6 template conjuncts.
+[2023-01-23 10:12:15,400 INFO  L401   nArgumentSynthesizer]: We have 6 Motzkin's Theorem applications.
+[2023-01-23 10:12:15,400 INFO  L402   nArgumentSynthesizer]: A total of 0 supporting invariants were added.
+[2023-01-23 10:12:15,415 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:15,426 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (57)] Ended with exit code 0
+[2023-01-23 10:12:15,428 INFO  L173          SolverBuilder]: Constructing external solver with command: z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2023-01-23 10:12:15,428 INFO  L189       MonitoredProcess]: No working directory specified, using /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3
+[2023-01-23 10:12:15,433 INFO  L229       MonitoredProcess]: Starting monitored process 58 with /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2023-01-23 10:12:15,523 INFO  L327       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (58)] Waiting until timeout for monitored process
+[2023-01-23 10:12:15,523 INFO  L120   nArgumentSynthesizer]: Termination Analysis Settings: Termination analysis: LINEAR_WITH_GUESSESNumber of strict supporting invariants: 0Number of non-strict supporting invariants: 1Consider only non-deceasing supporting invariants: trueSimplify termination arguments: trueSimplify supporting invariants: trueOverapproximate stem: false
+[2023-01-23 10:12:15,571 WARN  L333   nArgumentSynthesizer]: Using a linear SMT query and a templates of degree > 0, hence this method is incomplete.
+[2023-01-23 10:12:15,571 INFO  L338   nArgumentSynthesizer]: Template has degree 3.
+[2023-01-23 10:12:15,571 INFO  L203   nArgumentSynthesizer]: 1 stem disjuncts
+[2023-01-23 10:12:15,572 INFO  L204   nArgumentSynthesizer]: 1 loop disjuncts
+[2023-01-23 10:12:15,572 INFO  L205   nArgumentSynthesizer]: 6 template conjuncts.
+[2023-01-23 10:12:15,581 INFO  L401   nArgumentSynthesizer]: We have 18 Motzkin's Theorem applications.
+[2023-01-23 10:12:15,582 INFO  L402   nArgumentSynthesizer]: A total of 6 supporting invariants were added.
+[2023-01-23 10:12:15,688 INFO  L527          LassoAnalysis]: Proving termination failed for this template and these settings.
+[2023-01-23 10:12:15,760 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (58)] Ended with exit code 0
+[2023-01-23 10:12:15,760 INFO  L369   stractBuchiCegarLoop]: Result of lasso check was UNKNOWN. I will concatenate loop to stem and try again.
+[2023-01-23 10:12:15,761 INFO  L748   eck$LassoCheckResult]: Stem: 93#$Ultimate##0 assume { :begin_inline_ULTIMATE.init } true; 94#L-1 assume { :end_inline_ULTIMATE.init } true;assume { :begin_inline_main } true;havoc main_#res#1;havoc main_#t~nondet0#1, main_#t~post2#1, main_#t~post1#1, main_~i~0#1, main_~j~0#1, main_~num~0#1;havoc main_~i~0#1;havoc main_~j~0#1;main_~num~0#1 := main_#t~nondet0#1;havoc main_#t~nondet0#1; 96#L12 assume !(main_~num~0#1 > 65534);main_~i~0#1 := 0; 97#L14-3 assume !!(main_~i~0#1 < main_~num~0#1);main_~i~0#1 := 0; 91#L16-3 assume !!(main_~i~0#1 < 3); 92#L16-2 main_#t~post2#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post2#1;havoc main_#t~post2#1; 95#L16-3 assume !!(main_~i~0#1 < 3); 102#L16-2 main_#t~post2#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post2#1;havoc main_#t~post2#1; 101#L16-3 assume !!(main_~i~0#1 < 3); 100#L16-2 main_#t~post2#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post2#1;havoc main_#t~post2#1; 99#L16-3 assume !(main_~i~0#1 < 3); 98#L14-2 main_#t~post1#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post1#1;havoc main_#t~post1#1; 97#L14-3 
+[2023-01-23 10:12:15,761 INFO  L750   eck$LassoCheckResult]: Loop: 97#L14-3 assume !!(main_~i~0#1 < main_~num~0#1);main_~i~0#1 := 0; 91#L16-3 assume !!(main_~i~0#1 < 3); 92#L16-2 main_#t~post2#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post2#1;havoc main_#t~post2#1; 95#L16-3 assume !!(main_~i~0#1 < 3); 102#L16-2 main_#t~post2#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post2#1;havoc main_#t~post2#1; 101#L16-3 assume !!(main_~i~0#1 < 3); 100#L16-2 main_#t~post2#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post2#1;havoc main_#t~post2#1; 99#L16-3 assume !(main_~i~0#1 < 3); 98#L14-2 main_#t~post1#1 := main_~i~0#1;main_~i~0#1 := 1 + main_#t~post1#1;havoc main_#t~post1#1; 97#L14-3 
+[2023-01-23 10:12:15,761 INFO  L144       PredicateUnifier]: Initialized classic predicate unifier
+[2023-01-23 10:12:15,762 INFO  L85        PathProgramCache]: Analyzing trace with hash 515009849, now seen corresponding path program 2 times
+[2023-01-23 10:12:15,762 INFO  L118   FreeRefinementEngine]: Executing refinement strategy CAMEL
+[2023-01-23 10:12:15,762 INFO  L333   FreeRefinementEngine]: Using trace check IpTcStrategyModuleSmtInterpolCraig [1191460362]
+[2023-01-23 10:12:15,762 INFO  L95    rtionOrderModulation]: Keeping assertion order NOT_INCREMENTALLY
+[2023-01-23 10:12:15,763 INFO  L127          SolverBuilder]: Constructing new instance of SMTInterpol with explicit timeout -1 ms and remaining time -1 ms
+[2023-01-23 10:12:15,869 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:12:15,882 INFO  L356             TraceCheck]: Trace is feasible, we will do another trace check, this time with branch encoders.
+[2023-01-23 10:12:15,935 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:12:15,938 INFO  L130   FreeRefinementEngine]: Strategy CAMEL found a feasible trace
+[2023-01-23 10:12:15,938 INFO  L144       PredicateUnifier]: Initialized classic predicate unifier
+[2023-01-23 10:12:15,939 INFO  L85        PathProgramCache]: Analyzing trace with hash 1286429308, now seen corresponding path program 3 times
+[2023-01-23 10:12:15,939 INFO  L118   FreeRefinementEngine]: Executing refinement strategy CAMEL
+[2023-01-23 10:12:15,939 INFO  L333   FreeRefinementEngine]: Using trace check IpTcStrategyModuleSmtInterpolCraig [1843165818]
+[2023-01-23 10:12:15,939 INFO  L95    rtionOrderModulation]: Keeping assertion order NOT_INCREMENTALLY
+[2023-01-23 10:12:15,939 INFO  L127          SolverBuilder]: Constructing new instance of SMTInterpol with explicit timeout -1 ms and remaining time -1 ms
+[2023-01-23 10:12:15,949 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:12:15,950 INFO  L356             TraceCheck]: Trace is feasible, we will do another trace check, this time with branch encoders.
+[2023-01-23 10:12:15,956 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:12:15,963 INFO  L130   FreeRefinementEngine]: Strategy CAMEL found a feasible trace
+[2023-01-23 10:12:15,975 INFO  L144       PredicateUnifier]: Initialized classic predicate unifier
+[2023-01-23 10:12:15,976 INFO  L85        PathProgramCache]: Analyzing trace with hash 1266043972, now seen corresponding path program 3 times
+[2023-01-23 10:12:15,976 INFO  L118   FreeRefinementEngine]: Executing refinement strategy CAMEL
+[2023-01-23 10:12:15,976 INFO  L333   FreeRefinementEngine]: Using trace check IpTcStrategyModuleSmtInterpolCraig [1348237352]
+[2023-01-23 10:12:15,977 INFO  L95    rtionOrderModulation]: Keeping assertion order NOT_INCREMENTALLY
+[2023-01-23 10:12:15,977 INFO  L127          SolverBuilder]: Constructing new instance of SMTInterpol with explicit timeout -1 ms and remaining time -1 ms
+[2023-01-23 10:12:16,016 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:12:16,016 INFO  L356             TraceCheck]: Trace is feasible, we will do another trace check, this time with branch encoders.
+[2023-01-23 10:12:16,031 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:12:16,035 INFO  L130   FreeRefinementEngine]: Strategy CAMEL found a feasible trace
+[2023-01-23 10:12:16,391 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:12:16,391 INFO  L356             TraceCheck]: Trace is feasible, we will do another trace check, this time with branch encoders.
+[2023-01-23 10:12:16,420 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is sat
+[2023-01-23 10:12:16,564 INFO  L202        PluginConnector]: Adding new model de.uni_freiburg.informatik.ultimate.plugins.generator.buchiautomizer CFG 23.01 10:12:16 BoogieIcfgContainer
+[2023-01-23 10:12:16,564 INFO  L132        PluginConnector]: ------------------------ END BuchiAutomizer----------------------------
+[2023-01-23 10:12:16,566 INFO  L113        PluginConnector]: ------------------------Witness Printer----------------------------
+[2023-01-23 10:12:16,566 INFO  L271        PluginConnector]: Initializing Witness Printer...
+[2023-01-23 10:12:16,566 INFO  L275        PluginConnector]: Witness Printer initialized
+[2023-01-23 10:12:16,567 INFO  L185        PluginConnector]: Executing the observer RCFGCatcher from plugin Witness Printer for "de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder CFG 23.01 10:11:48" (3/4) ...
+[2023-01-23 10:12:16,572 INFO  L134         WitnessPrinter]: Generating witness for non-termination counterexample
+[2023-01-23 10:12:16,692 INFO  L141         WitnessManager]: Wrote witness to /home/linasvidziunas/Projects/ExtendingAPR/non-terminating-loops/Reusing_Same_Loop_Iterator_2_NT.c/witness.graphml
+[2023-01-23 10:12:16,693 INFO  L132        PluginConnector]: ------------------------ END Witness Printer----------------------------
+[2023-01-23 10:12:16,698 INFO  L158              Benchmark]: Toolchain (without parser) took 30679.58ms. Allocated memory was 86.0MB in the beginning and 104.9MB in the end (delta: 18.9MB). Free memory was 65.4MB in the beginning and 58.8MB in the end (delta: 6.6MB). Peak memory consumption was 28.1MB. Max. memory is 16.1GB.
+[2023-01-23 10:12:16,699 INFO  L158              Benchmark]: CDTParser took 0.35ms. Allocated memory is still 56.6MB. Free memory was 35.6MB in the beginning and 35.6MB in the end (delta: 49.2kB). There was no memory consumed. Max. memory is 16.1GB.
+[2023-01-23 10:12:16,700 INFO  L158              Benchmark]: CACSL2BoogieTranslator took 1276.81ms. Allocated memory is still 86.0MB. Free memory was 65.2MB in the beginning and 56.1MB in the end (delta: 9.1MB). Peak memory consumption was 10.5MB. Max. memory is 16.1GB.
+[2023-01-23 10:12:16,700 INFO  L158              Benchmark]: Boogie Procedure Inliner took 106.49ms. Allocated memory is still 86.0MB. Free memory was 56.1MB in the beginning and 54.6MB in the end (delta: 1.4MB). There was no memory consumed. Max. memory is 16.1GB.
+[2023-01-23 10:12:16,701 INFO  L158              Benchmark]: Boogie Preprocessor took 48.14ms. Allocated memory is still 86.0MB. Free memory was 54.6MB in the beginning and 53.8MB in the end (delta: 885.2kB). Peak memory consumption was 2.1MB. Max. memory is 16.1GB.
+[2023-01-23 10:12:16,701 INFO  L158              Benchmark]: RCFGBuilder took 1091.85ms. Allocated memory is still 86.0MB. Free memory was 53.5MB in the beginning and 67.0MB in the end (delta: -13.5MB). Peak memory consumption was 11.9MB. Max. memory is 16.1GB.
+[2023-01-23 10:12:16,702 INFO  L158              Benchmark]: BuchiAutomizer took 28003.71ms. Allocated memory was 86.0MB in the beginning and 104.9MB in the end (delta: 18.9MB). Free memory was 67.0MB in the beginning and 60.9MB in the end (delta: 6.2MB). Peak memory consumption was 24.6MB. Max. memory is 16.1GB.
+[2023-01-23 10:12:16,702 INFO  L158              Benchmark]: Witness Printer took 127.22ms. Allocated memory is still 104.9MB. Free memory was 60.9MB in the beginning and 58.8MB in the end (delta: 2.1MB). Peak memory consumption was 2.1MB. Max. memory is 16.1GB.
+[2023-01-23 10:12:16,711 INFO  L339   ainManager$Toolchain]: #######################  End [Toolchain 1] #######################
+ --- Results ---
+ * Results from de.uni_freiburg.informatik.ultimate.core:
+  - StatisticsResult: Toolchain Benchmarks
+    Benchmark results are:
+ * CDTParser took 0.35ms. Allocated memory is still 56.6MB. Free memory was 35.6MB in the beginning and 35.6MB in the end (delta: 49.2kB). There was no memory consumed. Max. memory is 16.1GB.
+ * CACSL2BoogieTranslator took 1276.81ms. Allocated memory is still 86.0MB. Free memory was 65.2MB in the beginning and 56.1MB in the end (delta: 9.1MB). Peak memory consumption was 10.5MB. Max. memory is 16.1GB.
+ * Boogie Procedure Inliner took 106.49ms. Allocated memory is still 86.0MB. Free memory was 56.1MB in the beginning and 54.6MB in the end (delta: 1.4MB). There was no memory consumed. Max. memory is 16.1GB.
+ * Boogie Preprocessor took 48.14ms. Allocated memory is still 86.0MB. Free memory was 54.6MB in the beginning and 53.8MB in the end (delta: 885.2kB). Peak memory consumption was 2.1MB. Max. memory is 16.1GB.
+ * RCFGBuilder took 1091.85ms. Allocated memory is still 86.0MB. Free memory was 53.5MB in the beginning and 67.0MB in the end (delta: -13.5MB). Peak memory consumption was 11.9MB. Max. memory is 16.1GB.
+ * BuchiAutomizer took 28003.71ms. Allocated memory was 86.0MB in the beginning and 104.9MB in the end (delta: 18.9MB). Free memory was 67.0MB in the beginning and 60.9MB in the end (delta: 6.2MB). Peak memory consumption was 24.6MB. Max. memory is 16.1GB.
+ * Witness Printer took 127.22ms. Allocated memory is still 104.9MB. Free memory was 60.9MB in the beginning and 58.8MB in the end (delta: 2.1MB). Peak memory consumption was 2.1MB. Max. memory is 16.1GB.
+ * Results from de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction:
+  - StatisticsResult: Constructed decomposition of program
+    Your program was decomposed into 2 terminating modules (2 trivial, 0 deterministic, 0 nondeterministic) and one nonterminating remainder module.2 modules have a trivial ranking function, the largest among these consists of 5 locations. The remainder module has 12 locations.
+  - StatisticsResult: Timing statistics
+    BüchiAutomizer plugin needed 27.6s and 3 iterations.  TraceHistogramMax:3. Analysis of lassos took 26.7s. Construction of modules took 0.2s. Büchi inclusion checks took 0.5s. Highest rank in rank-based complementation 0. Minimization of det autom 2. Minimization of nondet autom 0. Automata minimization 0.1s AutomataMinimizationTime, 2 MinimizatonAttempts, 3 StatesRemovedByMinimization, 2 NontrivialMinimizations. Non-live state removal took 0.0s Buchi closure took 0.0s. Biggest automaton had -1 states and ocurred in iteration -1.	Nontrivial modules had stage [0, 0, 0, 0, 0].	InterpolantCoveringCapabilityFinite: 0/0	InterpolantCoveringCapabilityBuchi: 0/0	HoareTripleCheckerStatistics: 0 mSolverCounterUnknown, 8 SdHoareTripleChecker+Valid, 0.3s IncrementalHoareTripleChecker+Time, 0 mSdLazyCounter, 8 mSDsluCounter, 23 SdHoareTripleChecker+Invalid, 0.2s Time, 0 mProtectedAction, 0 SdHoareTripleChecker+Unchecked, 0 IncrementalHoareTripleChecker+Unchecked, 7 mSDsCounter, 5 IncrementalHoareTripleChecker+Valid, 0 mProtectedPredicate, 24 IncrementalHoareTripleChecker+Invalid, 29 SdHoareTripleChecker+Unknown, 0 mSolverCounterNotChecked, 5 mSolverCounterUnsat, 16 mSDtfsCounter, 24 mSolverCounterSat, 0.0s SdHoareTripleChecker+Time, 0 IncrementalHoareTripleChecker+Unknown	LassoAnalysisResults: nont1 unkn0 SFLI2 SFLT0 conc0 concLT0 SILN0 SILU0 SILI0 SILT0 lasso0 LassoPreprocessingBenchmarks: LassoTerminationAnalysisBenchmarks: not availableLassoTerminationAnalysisBenchmarks: LassoNonterminationAnalysisSatFixpoint: 0	LassoNonterminationAnalysisSatUnbounded: 0	LassoNonterminationAnalysisUnsat: 0	LassoNonterminationAnalysisUnknown: 0	LassoNonterminationAnalysisTime: 0.0s	InitialAbstractionConstructionTime: 0.0s
+  - TerminationAnalysisResult: Nontermination possible
+    Buchi Automizer proved that your program is nonterminating for some inputs
+  - LassoShapedNonTerminationArgument [Line: 14]: Nontermination argument in form of an infinite program execution.
+    Nontermination argument in form of an infinite program execution.
+Stem:
+[L10]              int i,j;
+[L11]              int num = __VERIFIER_nondet_int();
+[L12]  COND FALSE  !(num > 65534)
+[L14]              i = 0
+       VAL         [i=0, num=5]
+[L14]  COND TRUE   i < num
+[L16]              i = 0
+       VAL         [i=0, num=5]
+[L16]  COND TRUE   i < 3
+       VAL         [i=0, num=5]
+[L16]              i++
+       VAL         [i=1, num=5]
+[L16]  COND TRUE   i < 3
+       VAL         [i=1, num=5]
+[L16]              i++
+       VAL         [i=2, num=5]
+[L16]  COND TRUE   i < 3
+       VAL         [i=2, num=5]
+[L16]              i++
+       VAL         [i=3, num=5]
+[L16]  COND FALSE  !(i < 3)
+       VAL         [i=3, num=5]
+[L14]              i++
+       VAL         [i=4, num=5]
+Loop:
+[L14]  COND TRUE   i < num
+[L16]              i = 0
+[L16]  COND TRUE   i < 3
+[L16]              i++
+[L16]  COND TRUE   i < 3
+[L16]              i++
+[L16]  COND TRUE   i < 3
+[L16]              i++
+[L16]  COND FALSE  !(i < 3)
+[L14]              i++
+End of lasso representation.
+  - StatisticsResult: NonterminationArgumentStatistics
+    Fixpoint
+  - NonterminatingLassoResult [Line: 14]: Nonterminating execution
+    Found a nonterminating execution for the following lasso shaped sequence of statements.
+Stem:
+[L10]              int i,j;
+[L11]              int num = __VERIFIER_nondet_int();
+[L12]  COND FALSE  !(num > 65534)
+[L14]              i = 0
+       VAL         [i=0, num=5]
+[L14]  COND TRUE   i < num
+[L16]              i = 0
+       VAL         [i=0, num=5]
+[L16]  COND TRUE   i < 3
+       VAL         [i=0, num=5]
+[L16]              i++
+       VAL         [i=1, num=5]
+[L16]  COND TRUE   i < 3
+       VAL         [i=1, num=5]
+[L16]              i++
+       VAL         [i=2, num=5]
+[L16]  COND TRUE   i < 3
+       VAL         [i=2, num=5]
+[L16]              i++
+       VAL         [i=3, num=5]
+[L16]  COND FALSE  !(i < 3)
+       VAL         [i=3, num=5]
+[L14]              i++
+       VAL         [i=4, num=5]
+Loop:
+[L14]  COND TRUE   i < num
+[L16]              i = 0
+[L16]  COND TRUE   i < 3
+[L16]              i++
+[L16]  COND TRUE   i < 3
+[L16]              i++
+[L16]  COND TRUE   i < 3
+[L16]              i++
+[L16]  COND FALSE  !(i < 3)
+[L14]              i++
+End of lasso representation.
+RESULT: Ultimate proved your program to be incorrect!
+[2023-01-23 10:12:16,840 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 -smt2 -in SMTLIB2_COMPLIANT=true (2)] Ended with exit code 0
+[2023-01-23 10:12:17,040 INFO  L552       MonitoredProcess]: [MP /home/linasvidziunas/Projects/ExtendingAPR/UAutomizer-linux/z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (1)] Ended with exit code 0
+Received shutdown request...
+--- End real Ultimate output ---
+
+Execution finished normally
+Writing output log to file Ultimate.log
+Writing human readable error path to file UltimateCounterExample.errorpath
+Result:
+FALSE(TERM)

@@ -1,0 +1,20 @@
+--prefix ./src/
+--program code.i
+--seed 1
+
+--label-repair
+
+--search brute
+--fault-scheme ochiai
+
+--no-rep-cache
+--no-test-cache
+--regen-paths
+
+--sanity no
+
+--fitness-in-parallel 5
+--compiler-command ./compile.sh __EXE_NAME__ __SOURCE_NAME__ __COMPILER_OPTIONS__ 1>/dev/null 2>/dev/null
+
+--pos-tests 11
+--neg-tests 2
