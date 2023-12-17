@@ -1,13 +1,10 @@
-[![MIT licence](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-
-
 # Replication package for "Extending the Range of Bugs That Automated Program Repair Can Handle"
 
 This repository contains the replication package for the paper 
-
 > _"Extending the Range of Bugs That Automated Program Repair Can Handle"_, 
-> Omar I. Al-Bataineh, Linas Vidziunas, and Leon Moonen, 
-> currently under review for the Special issue on QRS2022 in JSS
+> Omar I. Al-Bataineh, Leon Moonen and Linas Vidziunas. 
+> Published in the Journal on System and Software (JSS). 2023.
+> DOI: [10.1016/j.jss.2023.111918](https://doi.org/10.1016/j.jss.2023.111918)
 
 
 ## How to install
@@ -55,3 +52,32 @@ All files in this repository are distributed under the MIT license,
 except for the termination bugs in the folder `Bugs/termination`. 
 These originate from https://github.com/FSE2022benchmarks/termination, 
 which is distributed under the GPL3 license. 
+
+## Citation and Zenodo links
+
+Please site this work by referring to the paper: 
+> _"Extending the Range of Bugs That Automated Program Repair Can Handle"_, 
+> Omar I. Al-Bataineh, Leon Moonen and Linas Vidziunas. 
+> Journal on System and Software (JSS). 2023. DOI: [10.1016/j.jss.2023.111918](https://doi.org/10.1016/j.jss.2023.111918)
+
+    @article{bataineh2023:extending,
+        title = {Extending the Range of Bugs That Automated Program Repair Can Handle},
+        author = {Omar I. {Al-Bataineh} and Moonen, Leon and Vidziunas, Linas}
+        journal = {Journal of Systems and Software (JSS)},
+        year = {2023},
+        pages = {111918},
+        publisher = {Elsevier},
+        keywords = {automated program repair, bug classification, hybrid techniques, non-observable and liveness bugs},
+        doi = {10.1016/j.jss.2023.111918},
+    }
+
+The GitHub repository containing the code to automatically collect the
+dataset can be found at <https://github.com/secureIT-project/extendingAPR>,
+released with DOI:
+[10.5281/zenodo.10397656](https://doi.org/10.5281/zenodo.10397656).
+
+
+## Acknowledgement
+
+This work has been financially supported by the Research Council of
+Norway through the secureIT project (RCN contract \#288787).
